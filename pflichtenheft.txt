@@ -1,0 +1,40 @@
+		Frontend
+X		 Aktuelles → als Container anzeigen, abhängig von Dauer des Events/Aktion, als ersten/obersten Bereich der Seite
+X		- Startseite
+X		- Story/Über uns
+X		- Speisekarte ohne Preise.
+X		- Impressum (Pflicht in Deutschland)
+X		- Datenschutz (Pflicht in Deutschland)
+X		- Anfahrt/So findet ihr uns (Interessant für Abholer oder falls ihr Gäste bei euch bewirtet)
+X		- Footer mit Firmeninfos (2 Teilig , Firmeninfos | Seitelinks zur eigenen Webseite(Navigation) )
+
+
+
+		Backend
+		Login zum Backend -> TODO Logik
+		Newsletter Übersicht
+		(Tabelle die alle Empfänger des Newsletters zeigt, Kästchen zum auswählen an wen der Newsletter
+		raus gesendet werden soll.)
+X		Seite zum Anlegen/Bearbeiten von Emailadressen/Empfänger (Emailadresse)
+		->Email Adresse einbinden
+		->Newsletter senden button (Sende Newsletter an alle Empfänger)
+		->Newsletter senden dropdown (mit Newsletter Überschrift)
+
+X		Seite zum Anlegen/Bearbeiten Newsletterinhalten (Überschrift + Textinhalt/Body)
+X		Seite zum Anlegen/Bearbeiten News/Aktion/Event (Überschrift + Textinhalt/Body)
+X		Seite zum Anlegen/Bearbeiten/Hinzufügen Speisekarteneinträge
+X		->Bilderupload Bilder in laravel storage speichern und in db Pfad verlinken
+		->JS Sortable zur sortierung von Speisekarten einträgen
+		-> SORTIERUNG: sub_order_id implementieren
+		Datenbank
+		um dort die Emailadressen/Empfänger für den Newsletter abzulegen/zu speichern.
+			
+			
+		DB-Modell ist v1.1 (rdy), 
+		
+		Seite Footer bearbeiten
+		
+		->Firmeninfos einfügen(Text in Footer, Kontaktdaten)
+		Laravel Models 
+		
+		Mailserver zu versenden von newslettern anlegen
