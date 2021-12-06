@@ -113,6 +113,9 @@ Route::middleware('auth')->prefix('/admin')->name('admin.')->group(
             Route::get('/index', [NewsViewController::class, 'index'])->name('index');
             Route::get('/remove/{id?}', [NewsController::class, 'remove'])->name('remove');
             Route::post('/update', [NewsController::class, 'update'])->name('update');
+            Route::prefix('image')->name('image.')->group(function() {
+                Route::get('/remove/{id?}', [NewsController::class, 'removeImage'])->name('remove');
+            });
         });
 
         Route::prefix('story')->name('story.')->group(function() {

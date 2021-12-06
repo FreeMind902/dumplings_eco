@@ -8,10 +8,12 @@
   <title>{{ $pageTitle ?? 'Seitenname' }}</title>
   <link rel="stylesheet" href="{{asset('bootstrap/css/bootstrap.css')}}">
   <link rel="stylesheet" href="{{asset('css/styles.css')}}">
+{{--  <link rel="stylesheet" href="{{asset('suneditor/css/suneditor.min.css')}}">--}}
+  <link href="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/css/suneditor.min.css" rel="stylesheet">
   @yield('additional-css')
 
 </head>
-<body>
+<body">
 
 @include('elements.admin.navbar')
 
@@ -52,6 +54,8 @@
 
 <script type="text/javascript" src="{{asset('bootstrap/js/bootstrap.bundle.js')}}"></script>
 <script type="text/javascript" src="{{asset('js/jquery-3.6.0.min.js')}}"></script>
+{{--<script type="text/javascript" src="{{asset('suneditor/suneditor.min.js')}}"></script>--}}
+<script src="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/suneditor.min.js"></script>
 @yield('additional-js')
 
 </body>

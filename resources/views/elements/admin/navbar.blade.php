@@ -35,7 +35,7 @@
       
       <li class="nav-item ms-2 ms-md-5">
         <a class="nav-link" href="{{ route('admin.foodlist.index') }}">
-          Speisekarten
+          Speisekarte
         </a>
 {{--        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">--}}
 {{--          <li><a class="dropdown-item" href="">- Übersicht</a></li>--}}
@@ -54,15 +54,15 @@
         </ul>
       </li>
       
-      <li class="nav-item dropdown ms-2 ms-md-5">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Kategorie
-        </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="{{ route('admin.foodlist.category.index') }}">- Übersicht</a></li>
-          <li><a class="dropdown-item" href="{{ route('admin.foodlist.category.create') }}">- Erstellen</a></li>
-        </ul>
-      </li>
+{{--      <li class="nav-item dropdown ms-2 ms-md-5">--}}
+{{--        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
+{{--          Kategorie--}}
+{{--        </a>--}}
+{{--        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">--}}
+{{--          <li><a class="dropdown-item" href="{{ route('admin.foodlist.category.index') }}">- Übersicht</a></li>--}}
+{{--          <li><a class="dropdown-item" href="{{ route('admin.foodlist.category.create') }}">- Erstellen</a></li>--}}
+{{--        </ul>--}}
+{{--      </li>--}}
       
       <li class="nav-item dropdown ms-2 ms-md-5">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -3,875 +3,286 @@
 @section('content')
   <div class="container">
 
-    {{--HEADER--}}
-
-    {{--Start Viewport SM--}}
-    <div class="d-sm-block d-md-none letter-spacing-2">
-      <div class="row justify-content-center">
-        <div class="col-6 pb-5">
-          <img src="{{asset('images/foodlist/headline_noodles_468×120.png')}}" alt="" style=" max-width: 100%; max-height: 100%;">
-        </div>
-      </div>
-      {{--    Start FOODLIST ENTRY--}}
-      <div class="container mb-5">
-
-        <div class="row justify-content-center pb-4">
-          <div class="col-8 col-md-12" style="background:url('/public/images/foodlist/subheader_headline_noodles_mobil_330x369_top.png') no-repeat; background-size: 100%">
-            <div class="row ps-2 pt-2">
-              <div class="col-10">
-                <h4 class="mb-3" style="text-transform: uppercase;"><b>Rührnudeln mobil</b></h4>
-                <p><b><i>Nudeln in würziger Soße gerührt. Serviert mit Karotte, Gurke, Frühlingszwiebeln, Koriander und Erdnüssen .* </i> </b></p>
-                <p><b><i>(*außer bei Shanghai Noodles)</i></b></p>
-              </div>
-            </div>
-            <div class="col-10">
-              <img src="{{asset('images/foodlist/subheader_headline_noodles_mobil_190x369_bottom.png')}}" alt="header_bottom">
-            </div>
-          </div>
-        </div>
-
-        {{--    Start FOODLIST SUBENTRY--}}
-        <div class="row ps-5">
-          <div class="col-7">
-            <h6 class="mb-3" style="text-transform: uppercase;"><b>KAY‘S NOODLES</b></h6>
-
-          </div>
-          <div class="col-5">
-            <h6 class="mb-3"><b>9,00 €</b></h6>
-
-          </div>
-        </div>
-        <div class="row ps-5">
-          <div class="col-11">
-            <p><b><i>Paprika | Aubergine | Chili | Knoblauch | Ingwer</i></b></p>
-          </div>
-        </div>
-        {{--    End FOODLIST SUBENTRY--}}
-
-        {{--    Start FOODLIST SUBENTRY--}}
-        <div class="row ps-5 mt-4">
-          <div class="col-7">
-            <h6 class="mb-3" style="text-transform: uppercase;"><b>GUANGDONG NOODLES</b></h6>
-
-          </div>
-          <div class="col-5">
-            <h6 class="mb-3"><b>9,00 €</b></h6>
-
-          </div>
-        </div>
-        <div class="row ps-5">
-          <div class="col-11">
-            <p><b><i>Schweinefleisch | Bohnenpaste | Ingwer | Knoblauch</i></b></p>
-          </div>
-        </div>
-        {{--    End FOODLIST SUBENTRY--}}
-
-        {{--    Start FOODLIST SUBENTRY--}}
-        <div class="row ps-5 mt-4">
-          <div class="col-7">
-            <h6 class="mb-6" style="text-transform: uppercase;"><b>SHANGHAI NOODLES</b></h6>
-
-          </div>
-          <div class="col-5">
-            <h6 class="mb-3"><b>7,00 €</b></h6>
-
-          </div>
-        </div>
-        <div class="row ps-5">
-          <div class="col-11">
-            <p><b><i>Frühlingszwiebelöl | Sojasoße | frische Frühlingszwiebeln</i></b></p>
-          </div>
-        </div>
-
-        <div class="container mt-3">
-          {{--      Start EXTRAS SUBENTRY--}}
-          <div class="row ps-5">
-            <div class="col-7">
-              <h6><i class="font-weight-600">mit Ei</i></h6>
-            </div>
-            <div class="col-5">
-              <h6 class="font-weight-900">+ 1,00</h6>
-            </div>
-          </div>
-          {{--      End EXTRAS SUBENTRY--}}
-
-          {{--      Start EXTRAS SUBENTRY--}}
-          <div class="row ps-5">
-            <div class="col-7">
-              <h6><i class="font-weight-600">mit Tofu</i></h6>
-            </div>
-            <div class="col-5">
-              <h6 class="font-weight-900">+ 2,00</h6>
-            </div>
-          </div>
-          {{--      End EXTRAS SUBENTRY--}}
-
-          {{--      Start EXTRAS SUBENTRY--}}
-          <div class="row ps-5">
-            <div class="col-7">
-              <h6><i class="font-weight-600">mit Hänchenkeule (H)</i></h6>
-            </div>
-            <div class="col-5">
-              <h6 class="font-weight-900">+ 3,00</h6>
-            </div>
-          </div>
-          {{--      End EXTRAS SUBENTRY--}}
-
-          {{--      Start EXTRAS SUBENTRY--}}
-          <div class="row ps-5 pb-3" style="background:url('/public/images/foodlist/subheader_noodles_mobil_257x60_footer.png') no-repeat; background-size: 100%;">
-            <div class="col-7">
-              <h6><i class="font-weight-600">mit Rindfleisch (H)</i></h6>
-            </div>
-            <div class="col-5">
-              <h6 class="font-weight-900">+ 3,00</h6>
-            </div>
-          </div>
-          {{--      End EXTRAS SUBENTRY--}}
-
-        </div>
-        {{--    End FOODLIST SUBENTRY--}}
-      </div>
-      {{--    End FOODLIST ENTRY--}}
-      {{--    Start FOODLIST ENTRY--}}
-      <div class="container mb-5">
-        <div class="row justify-content-center pb-4">
-          <div class="col-8 col-md-12" style="background:url('/public/images/foodlist/subheader_headline_noodles_mobil_330x369_top.png') no-repeat; background-size: 100%">
-            <div class="row ps-2 pt-2">
-              <div class="col-11">
-                <h4 class="mb-3" style="text-transform: uppercase;"><b> NUDELSUPPE (H)</b></h4>
-                <p><b><i>Nudeln in einer kräftigen Hühnerbrühe nach Papas Geheimrezept für 24 Stunden mit 24 verschiedenen Gewürzen gekocht.</i> </b></p>
-                {{--                <h5><b><i>für 24 Stunden mit 24 verschiedenen Gewürzen gekocht.</i></b></h5>--}}
-              </div>
-            </div>
-            <img src="{{asset('images/foodlist/subheader_headline_noodles_mobil_190x369_bottom.png')}}" alt="header_bottom">
-          </div>
-        </div>
-        {{--    Start FOODLIST SUBENTRY--}}
-        <div class="row ps-5">
-          <div class="col-7">
-            <h6 class="mb-3" style="text-transform: uppercase;"><b>DADDY'S NOODLE SOUP</b></h6>
-          </div>
-          <div class="col-5">
-            <h6 class="mb-3"><b>9,00 €</b></h6>
-          </div>
-        </div>
-        <div class="row ps-5">
-          <div class="col-11">
-            <p><b><i>Sojasprossen | Chinakohl | Frühlingszwiebel | Koriander</i></b></p>
-          </div>
-          <div class="container mt-5 pb-5">
-            {{--      Start EXTRAS SUBENTRY--}}
-            <div class="row ps-3">
-              <div class="col-7">
-                <h6><i class="font-weight-600">mit Ei</i></h6>
-              </div>
-              <div class="col-5">
-                <h6 class="font-weight-900">+ 1,00</h6>
-              </div>
-            </div>
-            {{--      End EXTRAS SUBENTRY--}}
-
-            {{--      Start EXTRAS SUBENTRY--}}
-            <div class="row ps-3">
-              <div class="col-7">
-                <h6><i class="font-weight-600">mit Tofu</i></h6>
-              </div>
-              <div class="col-5">
-                <h6 class="font-weight-900">+ 2,00</h6>
-              </div>
-            </div>
-            {{--      End EXTRAS SUBENTRY--}}
-
-            {{--      Start EXTRAS SUBENTRY--}}
-            <div class="row ps-3">
-              <div class="col-7">
-                <h6><i class="font-weight-600">mit Hänchenkeule (H)</i></h6>
-              </div>
-              <div class="col-5">
-                <h6 class="font-weight-900">+ 3,00</h6>
-              </div>
-            </div>
-            {{--      End EXTRAS SUBENTRY--}}
-
-            {{--      Start EXTRAS SUBENTRY--}}
-            <div class="row ps-3" style="background:url('/public/images/foodlist/subheader_noodles_mobil_257x60_footer.png') no-repeat; background-size: 100%;">
-              <div class="col-7">
-                <h6><i class="font-weight-600">mit Rindfleisch (H)</i></h6>
-              </div>
-              <div class="col-5">
-                <h6 class="font-weight-900">+ 3,00</h6>
-              </div>
-            </div>
-            {{--      End EXTRAS SUBENTRY--}}
-
-          </div>
-
-        </div>
-        {{--    End FOODLIST SUBENTRY--}}
-      </div>
-      {{--    End FOODLIST ENTRY--}}
-      {{--    Start FOODLIST ENTRY--}}
-      <div class="container  mb-5">
-        <div class="row justify-content-center pb-4">
-          <div class="col-8 col-md-12" style="background:url('/public/images/foodlist/subheader_headline_noodles_mobil_330x369_top.png') no-repeat; background-size: 100%">
-            <div class="row ps-2 mt-3">
-              <div class="col-12">
-                <h5 class="mb-3" style="text-transform: uppercase;"><b>MENÜ (H)</b></h5>
-              </div>
-              <div class="col-12">
-                <h5 class="mb-3"><b>+ 4,50€</b></h5>
-              </div>
-            </div>
-            <div class="row pt-2">
-              <div class="col-12 ms-3">
-                <h5><b><i>Upgrade Deine Nudeln zum Menü</i> </b></h5>
-                <h5><b><i>inkl. 1 alkoholfreies Getränk</i></b></h5>
-              </div>
-            </div>
-            <img src="{{asset('images/foodlist/subheader_headline_noodles_mobil_190x369_bottom.png')}}" alt="header_bottom">
-
-          </div>
-        </div>
-      </div>
-      {{--    End FOODLIST ENTRY--}}
-
-    </div>
-    {{--End Viewport SM--}}
-
-    {{--Start Viewport MD--}}
-    <div class="d-none d-md-block d-lg-none letter-spacing-2">
-      <div class="row justify-content-center">
-        <div class="col-6 pb-5">
-          <img src="{{asset('images/foodlist/headline_noodles_468×120.png')}}" alt="" style=" max-width: 100%; max-height: 100%;">
-        </div>
-      </div>
-      {{--    Start FOODLIST ENTRY--}}
-      <div class="container mb-5">
-
-        <div class="row justify-content-center pb-4">
-          <div class="col-8 col-md-12" style="background:url('/public/images/foodlist/subheader_headline_noodles_md_720x210_top.png') no-repeat; background-size: 100%">
-            <div class="row pt-2">
-              <div class="col-11 ms-3 mt-3">
-                <h4 class="mb-3" style="text-transform: uppercase;"><b>md Rührnudeln {720x210}</b></h4>
-                <h5><b><i>Nudeln in würziger Soße gerührt. Serviert mit Karotte, Gurke, Frühlingszwiebeln, Koriander und Erdnüssen .* </i> </b></h5>
-                <h5><b><i>(*außer bei Shanghai Noodles)</i></b></h5>
-              </div>
-            </div>
-            <div class="col-10">
-              <img src="{{asset('images/foodlist/subheader_headline_noodles_md_680x210_bottom.png')}}" alt="header_bottom">
-            </div>
-          </div>
-        </div>
-
-        {{--    Start FOODLIST SUBENTRY--}}
-        <div class="row ps-5">
-          <div class="col-9">
-            <h4 class="mb-3" style="text-transform: uppercase;"><b>KAY‘S NOODLES</b></h4>
-
-          </div>
-          <div class="col-3">
-            <h4 class="mb-3"><b>9,00 €</b></h4>
-
-          </div>
-        </div>
-        <div class="row ps-5">
-          <div class="col-8">
-            <h5><b><i>Paprika | Aubergine | Chili | Knoblauch | Ingwer</i></b></h5>
-          </div>
-        </div>
-        {{--    End FOODLIST SUBENTRY--}}
-
-        {{--    Start FOODLIST SUBENTRY--}}
-        <div class="row ps-5 mt-4">
-          <div class="col-9">
-            <h4 class="mb-3" style="text-transform: uppercase;"><b>GUANGDONG NOODLES</b></h4>
-
-          </div>
-          <div class="col-3">
-            <h4 class="mb-3"><b>9,00 €</b></h4>
-
-          </div>
-        </div>
-        <div class="row ps-5">
-          <div class="col-8">
-            <h5><b><i>Schweinefleisch | Bohnenpaste | Ingwer | Knoblauch</i></b></h5>
-          </div>
-        </div>
-        {{--    End FOODLIST SUBENTRY--}}
-
-        {{--    Start FOODLIST SUBENTRY--}}
-        <div class="row ps-5 mt-4">
-          <div class="col-9">
-            <h4 class="mb-6" style="text-transform: uppercase;"><b>SHANGHAI NOODLES</b></h4>
-
-          </div>
-          <div class="col-3">
-            <h4 class="mb-3"><b>7,00 €</b></h4>
-
-          </div>
-        </div>
-        <div class="row ps-5">
-          <div class=" col-8">
-            <h5><b><i>Frühlingszwiebelöl | Sojasoße | frische Frühlingszwiebeln</i></b></h5>
-          </div>
-        </div>
-
-        <div class="container mt-5 pb-5" style="background:url('/public/images/foodlist/subheader_noodles_md_720x180_footer.png') no-repeat; background-size: 100%;">
-          {{--      Start EXTRAS SUBENTRY--}}
-          <div class="row ps-5">
-            <div class="col-6">
-              <h5><i class="font-weight-600">mit Ei</i></h5>
-            </div>
-
-          </div>
-          {{--      End EXTRAS SUBENTRY--}}
-
-          {{--      Start EXTRAS SUBENTRY--}}
-          <div class="row ps-5">
-            <div class="col-6">
-              <h5><i class="font-weight-600">mit Tofu</i></h5>
-            </div>
-
-          </div>
-          {{--      End EXTRAS SUBENTRY--}}
-
-          {{--      Start EXTRAS SUBENTRY--}}
-          <div class="row ps-5">
-            <div class="col-6">
-              <h5><i class="font-weight-600">mit Hänchenkeule (H)</i></h5>
-            </div>
-            <div class="col-3">
-              <h5 class="font-weight-900">+ 3,00</h5>
-            </div>
-          </div>
-          {{--      End EXTRAS SUBENTRY--}}
-
-          {{--      Start EXTRAS SUBENTRY--}}
-          <div class="row ps-5">
-            <div class="col-6">
-              <h5><i class="font-weight-600">mit Rindfleisch (H)</i></h5>
-            </div>
-            <div class="col-3">
-              <h5 class="font-weight-900">+ 3,00</h5>
-            </div>
-          </div>
-          {{--      End EXTRAS SUBENTRY--}}
-
-        </div>
-        {{--    End FOODLIST SUBENTRY--}}
-      </div>
-      {{--    End FOODLIST ENTRY--}}
-      {{--    Start FOODLIST ENTRY--}}
-      <div class="container  mb-5">
-        <div class="row justify-content-center pb-4">
-          <div class="col-8 col-md-12" style="background:url('/public/images/foodlist/subheader_headline_noodles_md_720x210_top.png') no-repeat; background-size: 100%">
-            <div class="row pt-2">
-              <div class="col-11 ms-3 mt-3">
-                <h4 class="mb-3" style="text-transform: uppercase;"><b> NUDELSUPPE (H)</b></h4>
-                <h5><b><i>Nudeln in einer kräftigen Hühnerbrühe nach Papas Geheimrezept für 24 Stunden mit 24 verschiedenen Gewürzen gekocht.</i> </b></h5>
-                {{--                <h5><b><i>für 24 Stunden mit 24 verschiedenen Gewürzen gekocht.</i></b></h5>--}}
-              </div>
-            </div>
-            <img src="{{asset('images/foodlist/subheader_headline_noodles_md_680x210_bottom.png')}}" alt="header_bottom">
-          </div>
-        </div>
-        {{--    Start FOODLIST SUBENTRY--}}
-        <div class="row ps-5">
-          <div class="col-10">
-            <h4 class="mb-3" style="text-transform: uppercase;"><b>DADDY'S NOODLE SOUP</b></h4>
-          </div>
-
-        </div>
-        <div class="row ps-5">
-          <div class="col-10">
-            <h5><b><i>Sojasprossen | Chinakohl | Frühlingszwiebel | Koriander</i></b></h5>
-          </div>
-          <div class="container mt-5 pb-5" style="background:url('/public/images/foodlist/subheader_noodles_lg_940x180_footer.png') no-repeat; background-size: 100%">
-            {{--      Start EXTRAS SUBENTRY--}}
-            <div class="row ps-5">
-              <div class="col-6">
-                <h5><i class="font-weight-600">mit Ei</i></h5>
-              </div>
-
-            </div>
-            {{--      End EXTRAS SUBENTRY--}}
-
-            {{--      Start EXTRAS SUBENTRY--}}
-            <div class="row ps-5">
-              <div class="col-6">
-                <h5><i class="font-weight-600">mit Tofu</i></h5>
-              </div>
-
-            </div>
-            {{--      End EXTRAS SUBENTRY--}}
-
-            {{--      Start EXTRAS SUBENTRY--}}
-            <div class="row ps-5">
-              <div class="col-6">
-                <h5><i class="font-weight-600">mit Hänchenkeule (H)</i></h5>
-              </div>
-
-            </div>
-            {{--      End EXTRAS SUBENTRY--}}
-
-            {{--      Start EXTRAS SUBENTRY--}}
-            <div class="row ps-5">
-              <div class="col-6">
-                <h5><i class="font-weight-600">mit Rindfleisch (H)</i></h5>
-              </div>
-
-            </div>
-            {{--      End EXTRAS SUBENTRY--}}
-
-          </div>
-
-        </div>
-        {{--    End FOODLIST SUBENTRY--}}
-      </div>
-      {{--    End FOODLIST ENTRY--}}
-      {{--    Start FOODLIST ENTRY--}}
-      <div class="container  mb-5">
-        <div class="row justify-content-center pb-4">
-          <div class="col-8 col-md-12" style="background:url('/public/images/foodlist/subheader_headline_noodles_md_720x210_top.png') no-repeat; background-size: 100%">
-            <div class="row pt-2 ms-3 mt-3">
-              <div class="col-5">
-                <h4 class="mb-3" style="text-transform: uppercase;"><b>MENÜ (H)</b></h4>
-              </div>
-
-            </div>
-            <div class="row pt-2">
-              <div class="col-12 ms-3">
-                <h5><b><i>Upgrade Deine Nudeln zum Menü</i> </b></h5>
-                <h5><b><i>inkl. 1 alkoholfreies Getränk</i></b></h5>
-              </div>
-            </div>
-            <img src="{{asset('images/foodlist/subheader_headline_noodles_md_680x210_bottom.png')}}" alt="header_bottom">
-
-          </div>
-        </div>
-      </div>
-      {{--    End FOODLIST ENTRY--}}
-    </div>
-    {{--End Viewport MD--}}
-
-    {{--Start Viewport LG--}}
-    <div class="d-none d-lg-block d-xl-none letter-spacing-2">
-      {{--    Start FOODLIST ENTRY--}}
-
-      @foreach($categories as $category)
-        <div class="row justify-content-center ps-5">
-
-          <div class="col-6 pb-5 ps-5">
-            <h1 class="display-3" style="text-transform: uppercase;"><b>LG {{$category->label_de}}</b></h1>
-            <h5 class="font-weight-600">{{$category->category_information_de}}</h5>
-
-          </div>
-        </div>
-        @foreach($category->foodlistSubCategories as $subCategory)
-          <div class="container mb-5">
-            <div class="row justify-content-center">
-              <div class="col-8 col-md-12" style="background:url('/public/images/foodlist/subheader_headline_noodles_lg_940x210_top.png') no-repeat; background-size: 100%">
-                <div class="row pt-2" style="min-height: 126px">
-                  <div class="col-12 ms-3 mt-3">
-                    <h4 class="mb-3" style="text-transform: uppercase;"><b>{{$subCategory->label_de}}</b></h4>
-                    <h5 class="me-2"><b><i>{{$subCategory->sub_category_information_de}}</i> </b></h5>
-                  </div>
-                </div>
-                <div class="col-10">
-                  <img src="{{asset('images/foodlist/subheader_headline_noodles_lg_940x210_bottom.png')}}" alt="header_bottom" width="900">
-                </div>
-              </div>
-            </div>
-            @foreach($subCategory->foodListEntries as $foodListEntry)
-              {{--    Start FOODLIST SUBENTRY--}}
-              @if (isset($foodListEntry->foodListExtras) && count($foodListEntry->foodListExtras) < 1)
-                <div class="container mt-5 pt-3"
-                     style="background:url('/public/images/foodlist/subheader_noodles_lg_940x180_footer.png') no-repeat; background-size: 100%; min-height: 180px; max-width: 860px;">
-                  @elseif(isset($foodListEntry->foodListExtras) && count($foodListEntry->foodListExtras) > 1)
-                    <div class="container pt-3" style="max-width: 860px;">
-                      @endif
-                      @if (isset($foodListEntry->foodListExtras) && count($foodListEntry->foodListExtras) < 1)
-                        <div class="row ps-5">
-                          @elseif(isset($foodListEntry->foodListExtras) && count($foodListEntry->foodListExtras) > 1)
-                            <div class="row ps-5">
-                              @endif
-                              <div class="col-10">
-                                <h4 style="text-transform: uppercase;"><b>{{$foodListEntry->label_de}}</b></h4>
-                              </div>
-                            </div>
-                            <div class="row ps-5">
-                              <div class="col-10 mb-1">
-                                <h5><b><i>{{$foodListEntry->foodlist_information_de}}</i></b></h5>
-                              </div>
-                            </div>
-                        </div>
-                        {{--    End FOODLIST SUBENTRY--}}
-                        @if (isset($foodListEntry->foodListExtras) && count($foodListEntry->foodListExtras) > 1)
-                          <div class="container pb-5 mt-5 pt-2"
-                               style="background:url('/public/images/foodlist/subheader_noodles_lg_940x180_footer.png') no-repeat; background-size: 100%; max-width: 860px;">
-                            @foreach($foodListEntry->foodListExtras as $foodListExtra)
-                              {{--      Start EXTRAS SUBENTRY--}}
-                              <div class="row ps-5">
-                                <div class="col-12">
-                                  <h5><i class="font-weight-600">{{$foodListExtra->label_de}}</i></h5>
-                                </div>
-                              </div>
-                              {{--                          End EXTRAS SUBENTRY--}}
-                              {{--                  End EXTRAS SUBENTRY--}}
-                            @endforeach
-                          </div>
-                        @endif
-                        @endforeach
-                        {{--    End FOODLIST SUBENTRY--}}
-                    </div>
-                    @endforeach
-                    {{--    End FOODLIST ENTRY--}}
-                    @endforeach
-
-
-                    {{--                <div class="row justify-content-center">--}}
-                    {{--                  <div class="col-4 pb-5">--}}
-                    {{--                    <h1 class="letter-spacing-5"><b>NUDELN</b></h1>--}}
-                    {{--                    <h5>Täglich frisch und hausgemacht</h5>--}}
-                    {{--                    --}}{{--          <img src="{{asset('images/foodlist/headline_noodles_800x205.png')}}" alt="" width="416px">--}}
-                    {{--                  </div>--}}
-                    {{--                </div>--}}
-                    {{--                <div class="container mb-5 letter-spacing-2">--}}
-
-                    {{--                  <div class="row justify-content-center pb-4">--}}
-                    {{--                    <div class="col-8 col-md-12" style="background:url('/public/images/foodlist/subheader_headline_noodles_lg_940x210_top.png') no-repeat; background-size: 100%">--}}
-                    {{--                      <div class="row pt-2">--}}
-                    {{--                        <div class="col-12 ms-3 mt-3">--}}
-                    {{--                          <h4 class="mb-3" style="text-transform: uppercase;"><b>LG RÜHRNUDELN {940x210}</b></h4>--}}
-                    {{--                          <h5><b><i>Nudeln in würziger Soße gerührt. Serviert mit Karotte, Gurke,</i> </b></h5>--}}
-                    {{--                          <h5><b><i>Frühlingszwiebeln, Koriander und Erdnüssen .* (*außer bei Shanghai Noodles) </i></b></h5>--}}
-                    {{--                        </div>--}}
-                    {{--                      </div>--}}
-                    {{--                      <div class="col-10">--}}
-                    {{--                        <img src="{{asset('images/foodlist/subheader_headline_noodles_lg_940x210_bottom.png')}}" alt="header_bottom">--}}
-                    {{--                      </div>--}}
-                    {{--                    </div>--}}
-                    {{--                  </div>--}}
-
-                    {{--                  --}}{{--    Start FOODLIST SUBENTRY--}}
-                    {{--                  <div class="row ps-5">--}}
-                    {{--                    <div class="col-10">--}}
-                    {{--                      <h4 class="mb-3" style="text-transform: uppercase;"><b>KAY‘S NOODLES</b></h4>--}}
-
-                    {{--                    </div>--}}
-
-                    {{--                  </div>--}}
-                    {{--                  <div class="row ps-5">--}}
-                    {{--                    <div class="col-8">--}}
-                    {{--                      <h5><b><i>Paprika | Aubergine | Chili | Knoblauch | Ingwer</i></b></h5>--}}
-                    {{--                    </div>--}}
-                    {{--                  </div>--}}
-                    {{--                  --}}{{--    End FOODLIST SUBENTRY--}}
-
-                    {{--                  --}}{{--    Start FOODLIST SUBENTRY--}}
-                    {{--                  <div class="row ps-5 mt-4">--}}
-                    {{--                    <div class="col-10">--}}
-                    {{--                      <h4 class="mb-3" style="text-transform: uppercase;"><b>GUANGDONG NOODLES</b></h4>--}}
-
-                    {{--                    </div>--}}
-
-                    {{--                  </div>--}}
-                    {{--                  <div class="row ps-5">--}}
-                    {{--                    <div class="col-10">--}}
-                    {{--                      <h5><b><i>Schweinefleisch | Bohnenpaste | Ingwer | Knoblauch</i></b></h5>--}}
-                    {{--                    </div>--}}
-                    {{--                  </div>--}}
-                    {{--                  --}}{{--    End FOODLIST SUBENTRY--}}
-
-                    {{--                  --}}{{--    Start FOODLIST SUBENTRY--}}
-                    {{--                  <div class="row ps-5 mt-4">--}}
-                    {{--                    <div class="col-10">--}}
-                    {{--                      <h4 class="mb-6" style="text-transform: uppercase;"><b>SHANGHAI NOODLES</b></h4>--}}
-
-                    {{--                    </div>--}}
-
-                    {{--                  </div>--}}
-                    {{--                  <div class="row ps-5">--}}
-                    {{--                    <div class=" col-10">--}}
-                    {{--                      <h5><b><i>Frühlingszwiebelöl | Sojasoße | frische Frühlingszwiebeln</i></b></h5>--}}
-                    {{--                    </div>--}}
-                    {{--                  </div>--}}
-
-                    {{--                  <div class="container mt-5 pb-5" style="background:url('/public/images/foodlist/subheader_noodles_lg_940x180_footer.png') no-repeat; background-size: 100%;">--}}
-                    {{--                    --}}{{--      Start EXTRAS SUBENTRY--}}
-                    {{--                    <div class="row ps-5">--}}
-                    {{--                      <div class="col-6">--}}
-                    {{--                        <h5><i class="font-weight-600">mit Ei</i></h5>--}}
-                    {{--                      </div>--}}
-
-                    {{--                    </div>--}}
-                    {{--                    --}}{{--      End EXTRAS SUBENTRY--}}
-
-                    {{--                    --}}{{--      Start EXTRAS SUBENTRY--}}
-                    {{--                    <div class="row ps-5">--}}
-                    {{--                      <div class="col-6">--}}
-                    {{--                        <h5><i class="font-weight-600">mit Tofu</i></h5>--}}
-                    {{--                      </div>--}}
-
-                    {{--                    </div>--}}
-                    {{--                    --}}{{--      End EXTRAS SUBENTRY--}}
-
-                    {{--                    --}}{{--      Start EXTRAS SUBENTRY--}}
-                    {{--                    <div class="row ps-5">--}}
-                    {{--                      <div class="col-6">--}}
-                    {{--                        <h5><i class="font-weight-600">mit Hänchenkeule (H)</i></h5>--}}
-                    {{--                      </div>--}}
-                    {{--                      <div class="col-3">--}}
-                    {{--                        <h5 class="font-weight-900">+ 3,00</h5>--}}
-                    {{--                      </div>--}}
-                    {{--                    </div>--}}
-                    {{--                    --}}{{--      End EXTRAS SUBENTRY--}}
-
-                    {{--                    --}}{{--      Start EXTRAS SUBENTRY--}}
-                    {{--                    <div class="row ps-5">--}}
-                    {{--                      <div class="col-6">--}}
-                    {{--                        <h5><i class="font-weight-600">mit Rindfleisch (H)</i></h5>--}}
-                    {{--                      </div>--}}
-                    {{--                      <div class="col-2">--}}
-                    {{--                        <h5 class="font-weight-900">+ 3,00</h5>--}}
-                    {{--                      </div>--}}
-                    {{--                    </div>--}}
-                    {{--                    --}}{{--      End EXTRAS SUBENTRY--}}
-
-                    {{--                  </div>--}}
-                    {{--                  --}}{{--    End FOODLIST SUBENTRY--}}
-                    {{--                </div>--}}
-                    {{--    End FOODLIST ENTRY--}}
-                    {{--    Start FOODLIST ENTRY--}}
-                    {{--                <div class="container  mb-5">--}}
-                    {{--                  <div class="row justify-content-center pb-4">--}}
-                    {{--                    <div class="col-8 col-md-12" style="background:url('/public/images/foodlist/subheader_headline_noodles_xl_1140x150_top.png') no-repeat; background-size: 100%">--}}
-                    {{--                      <div class="row pt-2">--}}
-                    {{--                        <div class="col-12 ms-3 mt-3">--}}
-                    {{--                          <h4 class="mb-3" style="text-transform: uppercase;"><b>{XL} NUDELSUPPE (H) {1140x150}</b></h4>--}}
-                    {{--                          <h5><b><i>Nudeln in einer kräftigen Hühnerbrühe nach Papas Geheimrezept</i> </b></h5>--}}
-                    {{--                          <h5><b><i>für 24 Stunden mit 24 verschiedenen Gewürzen gekocht.</i></b></h5>--}}
-                    {{--                        </div>--}}
-                    {{--                      </div>--}}
-                    {{--                      <img src="{{asset('images/foodlist/subheader_headline_noodles_lg_940x210_bottom.png')}}" alt="header_bottom">--}}
-
-                    {{--                    </div>--}}
-                    {{--                  </div>--}}
-                    {{--                  --}}{{--    Start FOODLIST SUBENTRY--}}
-                    {{--                  <div class="row ps-5">--}}
-                    {{--                    <div class="col-10">--}}
-                    {{--                      <h4 class="mb-3" style="text-transform: uppercase;"><b>DADDY'S NOODLE SOUP</b></h4>--}}
-                    {{--                    </div>--}}
-
-                    {{--                  </div>--}}
-                    {{--                  <div class="row ps-5">--}}
-                    {{--                    <div class="col-10">--}}
-                    {{--                      <h5><b><i>Sojasprossen | Chinakohl | Frühlingszwiebel | Koriander</i></b></h5>--}}
-                    {{--                    </div>--}}
-                    {{--                    <div class="container mt-5 pb-5" style="background:url('/public/images/foodlist/subheader_noodles_lg_940x180_footer.png') no-repeat; background-size: 100%">--}}
-                    {{--                      --}}{{--      Start EXTRAS SUBENTRY--}}
-                    {{--                      <div class="row ps-5">--}}
-                    {{--                        <div class="col-6">--}}
-                    {{--                          <h5><i class="font-weight-600">mit Ei</i></h5>--}}
-                    {{--                        </div>--}}
-
-                    {{--                      </div>--}}
-                    {{--                      --}}{{--      End EXTRAS SUBENTRY--}}
-
-                    {{--                      --}}{{--      Start EXTRAS SUBENTRY--}}
-                    {{--                      <div class="row ps-5">--}}
-                    {{--                        <div class="col-6">--}}
-                    {{--                          <h5><i class="font-weight-600">mit Tofu</i></h5>--}}
-                    {{--                        </div>--}}
-
-                    {{--                      </div>--}}
-                    {{--                      --}}{{--      End EXTRAS SUBENTRY--}}
-
-                    {{--                      --}}{{--      Start EXTRAS SUBENTRY--}}
-                    {{--                      <div class="row ps-5">--}}
-                    {{--                        <div class="col-6">--}}
-                    {{--                          <h5><i class="font-weight-600">mit Hänchenkeule (H)</i></h5>--}}
-                    {{--                        </div>--}}
-
-                    {{--                      </div>--}}
-                    {{--                      --}}{{--      End EXTRAS SUBENTRY--}}
-
-                    {{--                      --}}{{--      Start EXTRAS SUBENTRY--}}
-                    {{--                      <div class="row ps-5">--}}
-                    {{--                        <div class="col-6">--}}
-                    {{--                          <h5><i class="font-weight-600">mit Rindfleisch (H)</i></h5>--}}
-                    {{--                        </div>--}}
-
-                    {{--                      </div>--}}
-                    {{--                      --}}{{--      End EXTRAS SUBENTRY--}}
-
-                    {{--                    </div>--}}
-
-                    {{--                  </div>--}}
-                    {{--                  --}}{{--    End FOODLIST SUBENTRY--}}
-                    {{--                </div>--}}
-                    {{--    End FOODLIST ENTRY--}}
-                    {{--    Start FOODLIST ENTRY--}}
-                    {{--                <div class="container  mb-5">--}}
-                    {{--                  <div class="row justify-content-center pb-4">--}}
-                    {{--                    <div class="col-8 col-md-12" style="background:url('/public/images/foodlist/subheader_headline_noodles_xl_1140x150_top.png') no-repeat; background-size: 100%">--}}
-                    {{--                      <div class="row pt-2 ms-3 mt-3">--}}
-                    {{--                        <div class="col-5">--}}
-                    {{--                          <h4 class="mb-3" style="text-transform: uppercase;"><b>MENÜ (H)</b></h4>--}}
-                    {{--                        </div>--}}
-
-                    {{--                      </div>--}}
-                    {{--                      <div class="row pt-2">--}}
-                    {{--                        <div class="col-12 ms-3">--}}
-                    {{--                          <h5><b><i>Upgrade Deine Nudeln zum Menü</i> </b></h5>--}}
-                    {{--                          <h5><b><i>inkl. 1 alkoholfreies Getränk</i></b></h5>--}}
-                    {{--                        </div>--}}
-                    {{--                      </div>--}}
-                    {{--                      <img src="{{asset('images/foodlist/subheader_headline_noodles_lg_940x210_bottom.png')}}" alt="header_bottom">--}}
-
-                    {{--                    </div>--}}
-                    {{--                  </div>--}}
-                    {{--                </div>--}}
-                    {{--    End FOODLIST ENTRY--}}
-
-                </div>
-          </div>
-    </div>
-    {{--End Viewport LG--}}
-
-    {{--Start Viewport XL--}}
-    {{--    Rahmen reafactored, in 2 Teile, GETESTET--}}
-    <div class="d-none d-xl-block d-xxl-none letter-spacing-3">
-      @foreach($categories as $category)
-        <div class="row justify-content-center ps-5">
-
-          <div class="col-6 ps-5">
-            <h1 class="display-3" style="text-transform: uppercase;"><b>XL {{$category->label_de}}</b></h1>
-            <h5 class="font-weight-600">{{$category->category_information_de}}</h5>
-
-          </div>
-        </div>
-        @foreach($category->foodlistSubCategories as $subCategory)
-          <div class="container mb-5">
-            <div class="row justify-content-center pb-4">
-              <div class="col-8 col-md-12" style="background:url('/public/images/foodlist/subheader_headline_noodles_xxl_1320x150_top.png') no-repeat; background-size: 100%">
-                <div class="row pt-2" style="min-height: 126px">
-                  <div class="col-12 ms-3 mt-3">
-                    <h4 class="mb-3" style="text-transform: uppercase;"><b>{{$subCategory->label_de}}</b></h4>
-                    <h5><b><i>{{$subCategory->sub_category_information_de}}</i> </b></h5>
-                  </div>
-                </div>
-                <div class="col-10">
-                  <img src="{{asset('images/foodlist/subheader_headline_noodles_xl_1140x150_bottom.png')}}" alt="header_bottom" width="1100">
-                </div>
-              </div>
-            </div>
-            @foreach($subCategory->foodListEntries as $foodListEntry)
-              {{--    Start FOODLIST SUBENTRY--}}
-              <div class="container mt-5 pt-3" @if (count($foodListEntry->foodListExtras) < 1)
-              style="background:url('/public/images/foodlist/subheader_noodles_xxl_1320x150_footer.png') no-repeat; background-size: 100%; min-height: 180px;"
-                  @endif>
-                <div class="row ps-5">
-                  <div class="col-10">
-                    <h4 class="" style="text-transform: uppercase;"><b>{{$foodListEntry->label_de}}</b></h4>
-                  </div>
-                </div>
-                <div class="row ps-5">
-                  <div class="col-8 mb-3">
-                    <h5><b><i>{{$foodListEntry->foodlist_information_de}}</i></b></h5>
-                  </div>
-                </div>
-              </div>
-              {{--    End FOODLIST SUBENTRY--}}
-              @if (isset($foodListEntry->foodListExtras) && count($foodListEntry->foodListExtras) > 1)
-                <div class="container pb-5" style="background:url('/public/images/foodlist/subheader_noodles_xxl_1320x150_footer.png') no-repeat; background-size: 100%">
-                  @foreach($foodListEntry->foodListExtras as $foodListExtra)
-                    {{--      Start EXTRAS SUBENTRY--}}
-                    <div class="row ps-5">
-                      <div class="col-12">
-                        <h5><i class="font-weight-600">{{$foodListExtra->label_de}}</i></h5>
-                      </div>
-                    </div>
-                    {{--                          End EXTRAS SUBENTRY--}}
-                    {{--                  End EXTRAS SUBENTRY--}}
-                  @endforeach
-                </div>
-              @endif
-            @endforeach
-            {{--    End FOODLIST SUBENTRY--}}
-          </div>
-        @endforeach
-        {{--    End FOODLIST ENTRY--}}
-      @endforeach
-    </div>
-    {{--End Viewport XL--}}
     {{--Start Viewport XXL--}}
-    <div class="d-none d-xxl-block letter-spacing-3">
+    <div class="d-none d-lg-block letter-spacing-2">
       @foreach($categories as $category)
-        <div class="row justify-content-center">
-
-          <div class="col-4 pb-5">
-            <h1 class="display-3" style="text-transform: uppercase;"><b>XXL {{$category->label_de}}</b></h1>
-            <h5 class="font-weight-600">{{$category->category_information_de}}</h5>
-
+        <div class="row justify-content-center ps-5">
+          <div class="col-4 ps-5 pb-5 letter-spacing-2">
+            <h1 class="text-center font-dreamyland" style="font-size: 72px">
+              <b>@if (session('applocale') == 'en'){{$category->label_en}}@else{{$category->label_de}}@endif</b></h1>
+            <h5 class="text-white text-center mt-2 pb-2 font-futura"
+                style="background:url('/public/images/foodlist/bg_foodlist_header_subline_xxl.png') no-repeat; background-size: 100%; line-height: 24px">@if (session('applocale') == 'en'){{$category->category_information_en}}@else{{$category->category_information_de}}@endif</h5>
+            <h5 class="font-weight-600 text-center font-futura">@if (session('applocale') == 'en'){{$category->category_second_information_en}}@else{{$category->category_second_information_de}}@endif</h5>
+          </div>
+          <div class="col-2">
+            @if ($category->label_de == 'NUDELN')
+              <img src="{{asset('images/foodlist/logos/noodles.png')}}" alt="">
+            @endif
+            @if ($category->label_de == 'DUMPLINGS')
+              <img src="{{asset('images/foodlist/logos/dumplings.png')}}" alt="">
+            @endif
           </div>
         </div>
-        @foreach($category->foodlistSubCategories as $subCategory)
-          <div class="container mb-5">
-            <div class="row justify-content-center pb-4">
-              <div class="col-8 col-md-12" style="background:url('/public/images/foodlist/subheader_headline_noodles_xxl_1320x150_top.png') no-repeat; background-size: 100%">
-                <div class="row pt-2" style="min-height: 126px">
-                  <div class="col-12 ms-3 mt-3">
-                    <h4 class="mb-3" style="text-transform: uppercase;"><b>{{$subCategory->label_de}}</b></h4>
-                    <h5><b><i>{{$subCategory->sub_category_information_de}}</i> </b></h5>
+        <div class="row justify-content-center pb-4 mb-5 font-futura"
+             @if ($category->label_de == 'SOßEN') style="background:url('/public/images/foodlist/subheader_headline_noodles_xxl_1320x150_top_v1.1.png') no-repeat; background-size: 100%; max-height: 150px"
+             @endif
+             @if ($category->label_de == 'GETRÄNKE') style="background:url('/public/images/foodlist/drinks_box_xxl_top_v1.0.png') no-repeat; background-size: 100%;"
+             @endif
+             @if ($category->label_de == 'EXTRAS') style="background:url('/public/images/foodlist/subheader_headline_noodles_xxl_1320x150_top_v1.1.png') no-repeat; background-size: 100%;"
+            @endif
+        >
+          @foreach($category->foodlistSubCategories as $subCategory)
+            @if ($category->label_de == 'NUDELN')
+              @if($subCategory->label_de == "Menü")
+                <div class="col-8 mt-3 text-center" style="background:url('/public/images/foodlist/foodlist_box_medium_xxl.png') no-repeat; background-size: 100%; min-height: 250px">
+                  <h1 class="ps-3 pt-5" style="text-transform: uppercase;">@if (session('applocale') == 'en'){{$subCategory->label_en}}@else{{$subCategory->label_de}}@endif @if($subCategory->is_halal)
+                      <img src="{{asset('images/foodlist/logos/halal.png')}}" alt="halal" width="45">
+                    @elseif($subCategory->is_vegan)
+                      <img src="{{asset('images/foodlist/logos/vegan.png')}}" alt="vegan" width="50">
+                    @elseif($subCategory->is_veggie)
+                      <img src="{{asset('images/foodlist/logos/veggie.png')}}" alt="veggie" width="50">
+
+                    @elseif($subCategory->spicy_level == 1)
+                      <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                    @elseif($subCategory->spicy_level == 2)
+                      <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                      <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                    @elseif($subCategory->spicy_level == 3)
+                      <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                      <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                      <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                    @endif </h1>
+                  <h3 class="ps-3 pt-4">@if (session('applocale') == 'en'){{$subCategory->sub_category_information_en}}@else{{$subCategory->sub_category_information_de}}@endif</h3>
+                </div>
+              @else
+                <div class="col-12" style="background:url('/public/images/foodlist/subheader_headline_noodles_xxl_1320x150_top.png') no-repeat; background-size: 100%; min-height: 200px">
+                  <h1 class="ps-3 pt-3" style="text-transform: uppercase;">@if (session('applocale') == 'en'){{$subCategory->label_en}}@else{{$subCategory->label_de}}@endif
+                    @if($subCategory->is_halal)
+                      <img src="{{asset('images/foodlist/logos/halal.png')}}" alt="halal" width="45">
+                      @if($subCategory->is_vegan)
+                        <img src="{{asset('images/foodlist/logos/vegan.png')}}" alt="vegan" width="50">
+                      @endif
+                      @if($subCategory->is_veggie)
+                        <img src="{{asset('images/foodlist/logos/veggie.png')}}" alt="veggie" width="50">
+                      @endif
+                      @if($subCategory->spicy_level == 1)
+                        <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                      @endif
+                      @if($subCategory->spicy_level == 2)
+                        <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                        <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                      @endif
+                      @if($subCategory->spicy_level == 3)
+                        <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                        <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                        <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                      @endif
+                    @endif
+                  </h1>
+                  <h4 class="ps-3 pt-2">@if (session('applocale') == 'en'){{$subCategory->sub_category_information_en}}@else{{$subCategory->sub_category_information_de}}@endif</h4>
+                  <div class="col-12">
+                    <img src="{{asset('images/foodlist/subheader_headline_noodles_xxl_1320x150_bottom.png')}}" alt="header_bottom" style="width: 100%; object-fit: contain;">
                   </div>
-                </div>
-                <div class="col-10">
-                  <img src="{{asset('images/foodlist/subheader_headline_noodles_xxl_1320x150_bottom.png')}}" alt="header_bottom">
-                </div>
-              </div>
-            </div>
-            @foreach($subCategory->foodListEntries as $foodListEntry)
-              {{--    Start FOODLIST SUBENTRY--}}
-              <div class="container mt-5 pt-3" @if (count($foodListEntry->foodListExtras) < 1)
-              style="background:url('/public/images/foodlist/subheader_noodles_xxl_1320x150_footer.png') no-repeat; background-size: 100%; min-height: 180px;"
-                  @endif>
-                <div class="row ps-5">
-                  <div class="col-10">
-                    <h4 class="" style="text-transform: uppercase;"><b>{{$foodListEntry->label_de}}</b></h4>
-                  </div>
-                </div>
-                <div class="row ps-5">
-                  <div class="col-8 mb-3">
-                    <h5><b><i>{{$foodListEntry->foodlist_information_de}}</i></b></h5>
-                  </div>
-                </div>
-              </div>
-              {{--    End FOODLIST SUBENTRY--}}
-              @if (isset($foodListEntry->foodListExtras) && count($foodListEntry->foodListExtras) > 1)
-                <div class="container pb-5" style="background:url('/public/images/foodlist/subheader_noodles_xxl_1320x150_footer.png') no-repeat; background-size: 100%">
-                  @foreach($foodListEntry->foodListExtras as $foodListExtra)
-                    {{--      Start EXTRAS SUBENTRY--}}
-                    <div class="row ps-5">
-                      <div class="col-12">
-                        <h5><i class="font-weight-600">{{$foodListExtra->label_de}}</i></h5>
-                      </div>
-                    </div>
-                    {{--                          End EXTRAS SUBENTRY--}}
-                    {{--                  End EXTRAS SUBENTRY--}}
-                  @endforeach
                 </div>
               @endif
-            @endforeach
-            {{--    End FOODLIST SUBENTRY--}}
+              @foreach($subCategory->foodListEntries as $foodListEntry)
+                <div class="{{$foodListEntry->container_size}}">
+                  <h2>{{$foodListEntry->label_de}}</h2>
+                  <h4 class="pb-5">@if (session('applocale') == 'en'){{$foodListEntry->foodlist_information_en}}@else{{$foodListEntry->foodlist_information_de}}@endif</h4>
+                </div>
+                @if (isset($foodListEntry->foodlistOptions) && count($foodListEntry->foodlistOptions) > 1)
+                  @foreach($foodListEntry->foodlistOptions as $foodlistOption)
+                    <div class="row ps-5  @if ($loop->last) pb-5  @endif">
+                      <div class="col-12">
+                        <h5><i class="font-weight-600">@if (session('applocale') == 'en'){{$foodlistOption->label_en}}@else{{$foodlistOption->label_de}}@endif
+                          @if($foodlistOption->is_halal)
+                            <img src="{{asset('images/foodlist/logos/halal.png')}}" alt="halal" width="35">
+                          @endif
+                          @if($foodlistOption->is_vegan)
+                            <img src="{{asset('images/foodlist/logos/vegan.png')}}" alt="vegan" width="40">
+                          @endif
+                          @if($foodlistOption->is_veggie)
+                            <img src="{{asset('images/foodlist/logos/veggie.png')}}" alt="veggie" width="40">
+                          @endif
+                          @if($foodlistOption->spicy_level == 1)
+                            <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                          @endif
+                          @if($foodlistOption->spicy_level == 2)
+                            <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                            <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                          @endif
+                          @if($foodlistOption->spicy_level == 3)
+                            <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                            <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                            <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                          @endif
+                          </i>
+                        </h5>
+                      </div>
+                    </div>
+                  @endforeach
+                @endif
+              @endforeach
+            @endif
+            @if ($category->label_de == 'DUMPLINGS')
+              @if (Str::contains(strtolower($subCategory->label_de), 'small') OR Str::contains(strtolower($subCategory->label_de), 'medium') OR Str::contains(strtolower($subCategory->label_de), 'large'))
+                @if ($loop->odd)
+                  <div class="col-4 mt-3 pt-5 pe-5 text-center" style="background:url('/public/images/foodlist/foodlist_box_small_a_xxl.png') no-repeat; background-size:80%; min-height: 240px">
+                    <h2 class="pe-5" style="text-transform: uppercase;">@if (session('applocale') == 'en'){{$subCategory->label_en}}@else{{$subCategory->label_de}}@endif</h2>
+                    <h4 class="pe-5 pt-4">@if (session('applocale') == 'en'){{$subCategory->sub_category_information_en}}@else{{$subCategory->sub_category_information_de}}@endif</h4>
+                  </div>
+                @else
+                  <div class="col-4 mt-4 pt-5 pe-5 text-center" style="background:url('/public/images/foodlist/foodlist_box_small_b_xxl.png') no-repeat; background-size:80%; min-height: 250px">
+                    <h2 class="pe-5" style="text-transform: uppercase;">@if (session('applocale') == 'en'){{$subCategory->label_en}}@else{{$subCategory->label_de}}@endif</h2>
+                    <h4 class="pe-5 pt-4">@if (session('applocale') == 'en'){{$subCategory->sub_category_information_en}}@else{{$subCategory->sub_category_information_de}}@endif</h4>
+                  </div>
+                @endif
+              @else
+                <div class="col-12 mt-3" style="background:url('/public/images/foodlist/subheader_headline_noodles_xxl_1320x150_top.png') no-repeat; background-size: 100%; min-height: 250px">
+                  <h1 class="ps-3 pt-4" style="text-transform: uppercase;">@if (session('applocale') == 'en'){{$subCategory->label_en}}@else{{$subCategory->label_de}}@endif</h1>
+                  <h4 class="ps-3 pb-3">@if (session('applocale') == 'en'){{$subCategory->sub_category_information_en}}@else{{$subCategory->sub_category_information_de}}@endif</h4>
+                  <div class="col-12">
+                    <img src="{{asset('images/foodlist/subheader_headline_noodles_xxl_1320x150_bottom.png')}}" alt="header_bottom" style="width: 100%; object-fit: contain;">
+                  </div>
+                </div>
+              @endif
+              @foreach($subCategory->foodListEntries as $foodListEntry)
+                <div class="{{$foodListEntry->container_size}}">
+                  <h2>@if (session('applocale') == 'en'){{$foodListEntry->label_en}}@else{{$foodListEntry->label_de}}@endif
+                    @if($foodListEntry->is_halal)
+                      <img src="{{asset('images/foodlist/logos/halal.png')}}" alt="halal" width="50">
+                    @endif
+                    @if($foodListEntry->is_vegan)
+                      <img src="{{asset('images/foodlist/logos/vegan.png')}}" alt="vegan" width="50">
+                    @endif
+                    @if($foodListEntry->is_veggie)
+                      <img src="{{asset('images/foodlist/logos/veggie.png')}}" alt="veggie" width="50">
+                    @endif
+                    @if($foodListEntry->spicy_level == 1)
+                      <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                    @endif
+                    @if($foodListEntry->spicy_level == 2)
+                      <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                      <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                    @endif
+                    @if($foodListEntry->spicy_level == 3)
+                      <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                      <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                      <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                    @endif
+                  </h2>
+                  <h4>@if (session('applocale') == 'en'){{$foodListEntry->foodlist_information_en}}@else{{$foodListEntry->foodlist_information_de}}@endif</h4>
+                </div>
+              @endforeach
+            @endif
+            @if ($category->label_de == 'GETRÄNKE')
+              <div class="col-12 ps-5 pt-4">
+                <h1 class="pt-4" style="text-transform: uppercase;">@if (session('applocale') == 'en'){{$subCategory->label_en}}@else{{$subCategory->label_de}}@endif</h1>
+                <h4 class="pt-2 pb-3">@if (session('applocale') == 'en'){{$subCategory->sub_category_information_en}}@else{{$subCategory->sub_category_information_de}}@endif</h4>
+              </div>
+              @foreach($subCategory->foodListEntries as $foodListEntry)
+                <div class="row ps-5">
+                  <div class="{{$foodListEntry->container_size}} ps-5">
+                    <h2 class="ps-3 pt-4" style="text-transform: uppercase;">@if (session('applocale') == 'en'){{$foodListEntry->label_en}}@else{{$foodListEntry->label_de}}@endif</h2>
+                    <h4 class="ps-3">@if (session('applocale') == 'en'){{$foodListEntry->foodlist_information_en}}@else{{$foodListEntry->foodlist_information_de}}@endif</h4>
+                  </div>
+                </div>
+              @endforeach
+            @endif
+            @if ($category->label_de == 'SOßEN')
+              <div class="col-4 pt-5">
+                <h2 class="ps-3" style="text-transform: uppercase;">@if (session('applocale') == 'en'){{$subCategory->label_en}}@else{{$subCategory->label_de}}@endif
+                  @if($subCategory->is_halal)
+                    <img src="{{asset('images/foodlist/logos/halal.png')}}" alt="halal" width="50">
+                  @endif
+                  @if($subCategory->is_vegan)
+                    <img src="{{asset('images/foodlist/logos/vegan.png')}}" alt="vegan" width="50">
+                  @endif
+                  @if($subCategory->is_veggie)
+                    <img src="{{asset('images/foodlist/logos/veggie.png')}}" alt="veggie" width="50">
+                  @endif
+                  @if($subCategory->spicy_level == 1)
+                    <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                  @endif
+                  @if($subCategory->spicy_level == 2)
+                    <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                    <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                  @endif
+                  @if($subCategory->spicy_level == 3)
+                    <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                    <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                    <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                  @endif
+                </h2>
+                <h4 class="ps-3">@if (session('applocale') == 'en'){{$subCategory->sub_category_information_en}}@else{{$subCategory->sub_category_information_de}}@endif</h4>
+              </div>
+            @endif
+            @if ($category->label_de == 'EXTRAS')
+              <div class=" col-8 pt-5 text-center pe-5">
+                <h2 class="pe-3">@if (session('applocale') == 'en'){{$subCategory->label_en}}@else{{$subCategory->label_de}}@endif
+                  @if($subCategory->is_halal)
+                    <img src="{{asset('images/foodlist/logos/halal.png')}}" alt="halal" width="50">
+                  @endif
+                  @if($subCategory->is_vegan)
+                    <img src="{{asset('images/foodlist/logos/vegan.png')}}" alt="vegan" width="50">
+                  @endif
+                  @if($subCategory->is_veggie)
+                    <img src="{{asset('images/foodlist/logos/veggie.png')}}" alt="veggie" width="50">
+                  @endif
+                  @if($subCategory->spicy_level == 1)
+                    <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                  @endif
+                  @if($subCategory->spicy_level == 2)
+                    <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                    <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                  @endif
+                  @if($subCategory->spicy_level == 3)
+                    <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                    <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                    <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="chilli" width="25">
+                  @endif
+                </h2>
+                <h4 class="pe-3">@if (session('applocale') == 'en'){{$subCategory->sub_category_information_en}}@else{{$subCategory->sub_category_information_de}}@endif</h4>
+              </div>
+            @endif
+          @endforeach
+          @if ($category->label_de == 'GETRÄNKE')
+            <div class="col-12" style="margin-top:-400px">
+              <img src="{{asset('images/foodlist/drinks_box_xxl_bottom_v1.0.png')}}" alt="header_bottom" width="1312">
+            </div>
+            <div class="row mt-3">
+              <div class="col-12 pb-5">
+                <h4 class="float-end pb-3">@if (session('applocale') == 'en'){{$category->footline_en}}@else{{$category->footline_de}}@endif</h4>
+              </div>
+            </div>
+          @endif
+        </div>
+        @if ($category->label_de == 'SOßEN')
+          <div class="col-12">
+            <img src="{{asset('images/foodlist/sauces_footer_xxl_v1.1.png')}}" style="margin-left: -12px" alt="header_bottom" width="1320">
           </div>
-        @endforeach
-        {{--    End FOODLIST ENTRY--}}
+          <div class="row mt-3">
+            <div class="col-12 pt-3 pb-5">
+              <h4 class="float-end pb-3 font-futura">@if (session('applocale') == 'en'){{$category->footline_en}}@else{{$category->footline_de}}@endif</h4>
+            </div>
+          </div>
+        @endif
+
+      @if ($category->label_de == 'EXTRAS')
+          <div class="col-12">
+            <img src="{{asset('images/foodlist/extras_food_infobox_xxl_footer_v1.1.png')}}" style="margin-top: -150px" alt="header_bottom" width="1312">
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 pt-3 pb-5">
+              <h4 class="float-end pb-3">@if (session('applocale') == 'en'){{$category->footline_en}}@else{{$category->footline_de}}@endif</h4>
+            </div>
+          </div>
+        @endif
+
+
       @endforeach
     </div>
     {{--End Viewport XXL--}}
-
-    {{--HEADER--}}
 
 
   </div>

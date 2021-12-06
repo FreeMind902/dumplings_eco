@@ -8,9 +8,9 @@ use Illuminate\Http\Request;
 class SubscriberService
 {
     public function insert(Request $request) {
-        $postData = $request->all('subscriber')['subscriber'];
-        if(!isset($postData['is_active'])) {
-            $postData['is_active'] = 0;
+        $postData = $request->all();
+        if(!isset($postData['receives_newsletter'])) {
+            $postData['receives_newsletter'] = 0;
         }
         $subscriber = Subscriber::updateOrCreate(
 
@@ -18,7 +18,6 @@ class SubscriberService
 
             $postData,
         );
-//    dd($subscriber);
         return $subscriber;
     }
 

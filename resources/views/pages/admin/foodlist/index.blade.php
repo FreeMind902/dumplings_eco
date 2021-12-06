@@ -10,7 +10,7 @@
             <div class="row">
               <div class="col-6 mt-2">
 
-                <h3>Übersicht Speisekarten</h3>
+                <h3>Übersicht Speisekarte</h3>
 
               </div>
               <div class="col-6">
@@ -51,6 +51,21 @@
                   </button>
 
                 </a>
+                <a href="{{ route('admin.foodlist.extra.index') }}" class="text-decoration-none">
+                  <button class="btn btn-outline-success" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="feather feather-list">
+                      <line x1="8" y1="6" x2="21" y2="6"/>
+                      <line x1="8" y1="12" x2="21" y2="12"/>
+                      <line x1="8" y1="18" x2="21" y2="18"/>
+                      <line x1="3" y1="6" x2="3.01" y2="6"/>
+                      <line x1="3" y1="12" x2="3.01" y2="12"/>
+                      <line x1="3" y1="18" x2="3.01" y2="18"/>
+                    </svg>
+                    Option anlegen
+                  </button>
+
+                </a>
                 <a href="{{ route('admin.foodlist.category.index') }}" class="text-decoration-none">
                   <button class="btn btn-outline-primary" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -76,21 +91,7 @@
                   </button>
 
                 </a>
-                <a href="{{ route('admin.foodlist.extra.index') }}" class="text-decoration-none">
-                  <button class="btn btn-outline-primary" type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                         class="feather feather-list">
-                      <line x1="8" y1="6" x2="21" y2="6"/>
-                      <line x1="8" y1="12" x2="21" y2="12"/>
-                      <line x1="8" y1="18" x2="21" y2="18"/>
-                      <line x1="3" y1="6" x2="3.01" y2="6"/>
-                      <line x1="3" y1="12" x2="3.01" y2="12"/>
-                      <line x1="3" y1="18" x2="3.01" y2="18"/>
-                    </svg>
-                    Extras
-                  </button>
 
-                </a>
 
                 {{--                <a href="{{ route('admin.foodlist.sorting.index') }}" class="text-decoration-none">--}}
 
@@ -123,7 +124,7 @@
                   <th scope="col">Kategorie</th>
                   <th scope="col">Unter Kategorie</th>
                   <th scope="col">Überschrift</th>
-                  <th scope="col">Extras</th>
+                  <th scope="col">Optionen</th>
                   <th scope="col">Aktion</th>
                 </tr>
                 </thead>
@@ -135,15 +136,15 @@
                       <td class="col">@if(isset($foodListEntry->foodlistSubCategory->label_de)){{$foodListEntry->foodlistSubCategory->label_de}}@endif</td>
                       <td class="col">@if(isset($foodListEntry)){{$foodListEntry->label_de}}@endif</td>
                       <td class="col">
-                        @if(isset($foodListEntry->foodListExtras) && count($foodListEntry->foodListExtras) > 1)
+                        @if(isset($foodListEntry->foodlistOptions) && count($foodListEntry->foodlistOptions) > 1)
 
-                          @foreach($foodListEntry->foodListExtras as $foodListExtra)
-                            <p class="mb-0">@if(isset($foodListExtra)){{$foodListExtra->label_de}}@endif</p>
+                          @foreach($foodListEntry->foodlistOptions as $foodlistOption)
+                            <p class="mb-0">@if(isset($foodlistOption)){{$foodlistOption->label_de}}@endif</p>
                           @endforeach
-                          <a href="{{route('admin.foodlist.extra.create')}}" style=" text-decoration-color:green"><p class="text-success">Weiteres Extra anlegen</p></a>
+                          <a href="{{route('admin.foodlist.extra.create')}}" style=" text-decoration-color:green"><p class="text-success">Weitere Option anlegen</p></a>
                         @else
 
-                          <a href="{{route('admin.foodlist.extra.create')}}"  style=" text-decoration-color:green"><p class="text-success">Extra anlegen</p></a>
+                          <a href="{{route('admin.foodlist.extra.create')}}"  style=" text-decoration-color:green"><p class="text-success">Option anlegen</p></a>
                         @endif
                       </td>
                       <td class="col-3">

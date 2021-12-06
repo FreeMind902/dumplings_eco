@@ -18,12 +18,12 @@
           <div class="card-header">
 
             <div class="row">
-              <div class="col-6 mt-2">
+              <div class="col-8 mt-2">
 
-                <h4>Speisekarten Eintrag Extra erstellen</h4>
+                <h4>Option für Speisekarteneintrag erstellen</h4>
 
               </div>
-              <div class="col-6">
+              <div class="col-4">
 
                 <a href="{{ route('admin.foodlist.extra.index') }}">
 
@@ -49,6 +49,11 @@
               <input type="hidden" name="id" value="@if(isset($foodlistExtra)){{$foodlistExtra->id}}@endif">
               @if(isset($foodListEntries) && count($foodListEntries) > 1)
                 <div class="row mb-3">
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-outline-primary">@if(isset($foodlistEntry)) Speichern @else Anlegen @endif</button>
+                  </div>
+                </div>
+                <div class="row mb-3">
                   <label class="form-label" for="foodlist_category" style="font-size: 20px">Speisekarteneintrag</label>
                   <div class="col-12 col-md-4">
                     <select name="foodlist_entries_id" id="foodlist_category" class="form-select">
@@ -64,17 +69,61 @@
                     </select>
                   </div>
                 </div>
-                <div class="row mb-3">
-                  <div class="col-12">
-                    <button type="submit" class="btn btn-outline-primary">@if(isset($foodlistEntry)) Speichern @else Anlegen @endif</button>
-                  </div>
-                </div>
+
               @else
                 <div class="row">
                   <p class="text-danger">Bitte zuerst <a href="{{route('admin.foodlist.category.create')}}" class="text-danger"><b>hier</b></a> einen Speisekarten Eintrag erstellen</p>
                 </div>
               @endif
-{{--@dump($foodlistExtra)--}}
+              <div class="row pt-3 mb-3">
+                <div class="pt-2 col-2">
+                  <div class="form-check">
+                    <input name="is_halal" class="form-check-input" type="checkbox" value="1"
+                           @if (isset($foodlistExtra) && $foodlistExtra->is_halal == 1)  checked @endif >
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <img src="{{asset('images/foodlist/logos/halal.png')}}" alt="" width="48">
+                    </label>
+                  </div>
+                </div>
+                <div class="pt-2 col-2">
+                  <div class="form-check">
+                    <input name="is_vegan" class="form-check-input" type="checkbox" value="1"
+                           @if (isset($foodlistExtra) && $foodlistExtra->is_vegan == 1)  checked @endif >
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <img src="{{asset('images/foodlist/logos/vegan.png')}}" alt="" width="50">
+                    </label>
+                  </div>
+                </div>
+                <div class="pt-2 col-2">
+                  <div class="form-check">
+                    <input name="is_veggie" class="form-check-input" type="checkbox" value="1"
+                           @if (isset($foodlistExtra) && $foodlistExtra->is_veggie == 1)  checked @endif >
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <img src="{{asset('images/foodlist/logos/veggie.png')}}" alt="" width="50">
+                    </label>
+                  </div>
+                </div>
+                <div class="pt-2 col-2">
+                  <div class="form-check">
+                    <input name="is_spicy" class="form-check-input" type="checkbox" value="1"
+                           @if (isset($foodlistExtra) && $foodlistExtra->is_spicy == 1)  checked @endif >
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <img src="{{asset('images/foodlist/logos/chilli.png')}}" alt="" height="52">
+                    </label>
+                  </div>
+                </div>
+                <div class="col-2">
+                  <div class="form-group row">
+                    <div class="form-group form-check-inline">
+                      <label class="form-check-label" for="inlineCheckbox1">Chillis</label>
+                      <input class="form-control" type="number" max="3" min="0" size="1" placeholder="0"
+                             value="{{$subCategory->spicy_level ?? 0}}" name="spicy_level">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
               <div class="row mb-3">
                 <div class="col-12 col-md-6 mb-3">
                   <h5 class="form-label">Deutsch</h5>

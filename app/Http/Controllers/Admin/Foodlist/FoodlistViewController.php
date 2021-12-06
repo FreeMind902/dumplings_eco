@@ -20,7 +20,7 @@ class FoodlistViewController extends FoodlistController
     public function foodListEntryIndex() {
         return view('pages.admin.foodlist.index',
             [
-                'foodListEntries' => $this->foodlistCategoryService->getAllFoodlistEntriesWithExtrasAndCategoryWithSubCategory() ?? null,
+                'foodListEntries' => $this->foodlistCategoryService->getAllFoodlistEntriesWithOptionsAndCategoryWithSubCategory() ?? null,
             ]
         );
     }
@@ -28,7 +28,7 @@ class FoodlistViewController extends FoodlistController
     public function createFoodListExtra($id = null) {
         return view('pages.admin.foodlist.extra.create',
             [
-                'foodlistExtra' => $this->foodlistCategoryService->getSingleFoodlistExtraWithFoodListEntryById($id) ?? null,
+                'foodlistExtra' => $this->foodlistCategoryService->getSingleFoodlistOptionWithFoodListEntryById($id) ?? null,
                 'foodListEntries'      => $this->foodlistCategoryService->getAllFoodlistEntries() ?? null,
 
             ],
@@ -38,7 +38,7 @@ class FoodlistViewController extends FoodlistController
     public function foodListExtraIndex() {
         return view('pages.admin.foodlist.extra.index',
             [
-                'foodListExtras' => $this->foodlistCategoryService->getAllFoodlistExtrasWithFoodListEntry() ?? null,
+                'foodListExtras' => $this->foodlistCategoryService->getAllFoodlistOptionsWithFoodListEntry() ?? null,
             ]
         );
     }

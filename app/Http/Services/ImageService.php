@@ -13,29 +13,21 @@ use Illuminate\Support\Str;
 
 class ImageService
 {
-    public function put($file) {
+    public function put($file, $path = null) {
         $fileName   = $file->getClientOriginalName();
-        $storedFile = Storage::putFileAs('public/images/upload/foodlist', $file, $fileName);
-
+        if ($path != null) {
+            $path = $path.'/';
+        }
+        $storedFile = Storage::putFileAs('public/images/upload'.$path , $file, $fileName);
         $storedFilePath = Str::replace('public/', 'storage/', $storedFile);
-
-        $image           = new Image();
-        $image->path     = $storedFilePath;
-        $image->filename = $fileName;
-        $image->save();
-
-        return $image;
+        return (object) ['image_file_name' => $fileName, 'image_path' => $storedFilePath];
     }
 
-    public function delete($id) {
+    public function delete($filename,$path = null) {
 
-        $newsletter = FoodlistEntry::where('image_id', $id)->first();
-        if($newsletter) {
-            $newsletter->image_id = null;
-            $newsletter->save();
+        if ($path != null) {
+            $path = $path.'/';
         }
-        $image = Image::find($id);
-        $image->delete();
-        Storage::delete('public/images/upload/foodlist/' . $image->filename);
+        Storage::delete('public/images/upload/news/' . $path  . $filename);
     }
 }

@@ -16,9 +16,9 @@ class StoryController extends Controller {
   }
   
   public function remove($id) {
-    $story = $this->storyService->singleWithImage($id);
     $this->storyService->delete($id);
-    
+    $this->storyService->deleteImage($id);
+
     return redirect()->route('admin.story.index')->with('status', 'Eintrag wurde erfolgreich gelöscht');
   }
   

@@ -10,7 +10,7 @@
             <div class="row">
               <div class="col-6 mt-2">
 
-                <h3>Newsletter-Übersicht</h3>
+                <h3>Newsletter Übersicht</h3>
 
               </div>
 
@@ -33,29 +33,39 @@
             </div>
           </div>
           <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+                <a href="{{ route('admin.newsletter.create') }}">
+                  <button class="btn btn-outline-success" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                         stroke-linejoin="round" class="feather feather-plus">
+                      <line x1="12" y1="5" x2="12" y2="19"/>
+                      <line x1="5" y1="12" x2="19" y2="12"/>
+                    </svg>
+                    Abonennt hinzufügen
+                  </button>
+                </a>
+              </div>
+              <div class="col-6">
+                <a href="{{ route('admin.newsletter.send') }}">
+                  <button class="btn btn-outline-primary float-end" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                         class="feather feather-send">
+                      <line x1="22" y1="2" x2="11" y2="13"/>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                    </svg>
+                    Newsletter senden
+                  </button>
+                </a>
+              </div>
+            </div>
 
-            {{--            <h5 class="card-title">Special title treatment</h5>--}}
-            {{--            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>--}}
-            <a href="{{ route('admin.newsletter.create') }}">
-
-              <button class="btn btn-outline-success" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                     stroke-linejoin="round" class="feather feather-plus">
-                  <line x1="12" y1="5" x2="12" y2="19"/>
-                  <line x1="5" y1="12" x2="19" y2="12"/>
-                </svg>
-
-                Newsletter hinzufügen
-              </button>
-
-            </a>
             <div class="table-responsive">
               {{--              TODO Datatables wegen sortieren--}}
               <table class="table">
                 <thead>
                 <tr>
                   <th scope="col">#</th>
-                  <th scope="col">Kategorie</th>
                   <th scope="col">Betreff</th>
                   <th scope="col">Zuletzt versendet</th>
                   <th scope="col">Aktionen</th>
@@ -67,8 +77,7 @@
                     <div class="row">
                       <tr>
                         <td class="col">{{$newsletter->id}}</td>
-                        <td class="col">{{$newsletter->localizations->heading->category_label}}</td>
-                        <td class="col">{{$newsletter->localizations->heading->label}}</td>
+                        <td class="col">{{$newsletter->subject_de}}</td>
                         <td class="col">{{$newsletter->last_send ?? ' Nie'}}</td>
                         <td class="col-3">
                           <a class="text-decoration-none" href="{{route('admin.newsletter.create',['id' => $newsletter->id])}}">

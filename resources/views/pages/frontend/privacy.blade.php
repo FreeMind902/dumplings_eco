@@ -9,24 +9,24 @@
         <div class="h-100 p-5 bg-light border rounded-3">
           <h4>Datenschutzerklärung</h4>
           
-          <p>Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen. Datenschutz hat einen besonders hohen Stellenwert für die Geschäftsleitung der Dumplings. Eine Nutzung
-             der Internetseiten der Dumplings ist grundsätzlich ohne jede Angabe personenbezogener Daten möglich. Sofern eine betroffene Person besondere Services unseres
+          <p>Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen. Datenschutz hat einen besonders hohen Stellenwert für die Geschäftsleitung der Wanna Eat. Eine Nutzung
+             der Internetseiten der Wanna Eat ist grundsätzlich ohne jede Angabe personenbezogener Daten möglich. Sofern eine betroffene Person besondere Services unseres
              Unternehmens über unsere Internetseite in Anspruch nehmen möchte, könnte jedoch eine Verarbeitung personenbezogener Daten erforderlich werden. Ist die Verarbeitung
              personenbezogener Daten erforderlich und besteht für eine solche Verarbeitung keine gesetzliche Grundlage, holen wir generell eine Einwilligung der betroffenen Person
              ein.</p>
           
           <p>Die Verarbeitung personenbezogener Daten, beispielsweise des Namens, der Anschrift, E-Mail-Adresse oder Telefonnummer einer betroffenen Person, erfolgt stets im
-             Einklang mit der Datenschutz-Grundverordnung und in Übereinstimmung mit den für die Dumplings geltenden landesspezifischen Datenschutzbestimmungen. Mittels dieser
+             Einklang mit der Datenschutz-Grundverordnung und in Übereinstimmung mit den für die Wanna Eat geltenden landesspezifischen Datenschutzbestimmungen. Mittels dieser
              Datenschutzerklärung möchte unser Unternehmen die Öffentlichkeit über Art, Umfang und Zweck der von uns erhobenen, genutzten und verarbeiteten personenbezogenen Daten
              informieren. Ferner werden betroffene Personen mittels dieser Datenschutzerklärung über die ihnen zustehenden Rechte aufgeklärt.</p>
           
-          <p>Die Dumplings hat als für die Verarbeitung Verantwortlicher zahlreiche technische und organisatorische Maßnahmen umgesetzt, um einen möglichst lückenlosen Schutz der
+          <p>Die Wanna Eat hat als für die Verarbeitung Verantwortlicher zahlreiche technische und organisatorische Maßnahmen umgesetzt, um einen möglichst lückenlosen Schutz der
              über diese Internetseite verarbeiteten personenbezogenen Daten sicherzustellen. Dennoch können Internetbasierte Datenübertragungen grundsätzlich Sicherheitslücken
              aufweisen, sodass ein absoluter Schutz nicht gewährleistet werden kann. Aus diesem Grund steht es jeder betroffenen Person frei, personenbezogene Daten auch auf
              alternativen Wegen, beispielsweise telefonisch, an uns zu übermitteln.</p>
           
           <h4>1. Begriffsbestimmungen</h4>
-          <p>Die Datenschutzerklärung der Dumplings beruht auf den Begrifflichkeiten, die durch den Europäischen Richtlinien- und Verordnungsgeber beim Erlass der
+          <p>Die Datenschutzerklärung der Wanna Eat beruht auf den Begrifflichkeiten, die durch den Europäischen Richtlinien- und Verordnungsgeber beim Erlass der
              Datenschutz-Grundverordnung (DS-GVO) verwendet wurden. Unsere Datenschutzerklärung soll sowohl für die Öffentlichkeit als auch für unsere Kunden und Geschäftspartner
              einfach lesbar und verständlich sein. Um dies zu gewährleisten, möchten wir vorab die verwendeten Begrifflichkeiten erläutern.</p>
           
@@ -95,16 +95,16 @@
           <p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer
              Bestimmungen mit datenschutzrechtlichem Charakter ist die:</p>
           
-          <p>Dumplings</p>
-          <p>Straße 22</p>
-          <p>13233 Berlin</p>
+          <p>Wanna Eat</p>
+          <p>Flughafenstr. 25</p>
+          <p>12053  Berlin</p>
           <p>Deutschland</p>
           <p>Tel.: +49132465798</p>
-          <p>E-Mail: info@dumplings.local</p>
-          <p>Website: dumplings.local</p>
+          <p>E-Mail: info@wannaeat.de</p>
+          <p>Website: wannaeat.de</p>
           
           <h4>3. Cookies</h4>
-          <p>Die Internetseiten der Dumplings verwenden Cookies. Cookies sind Textdateien, welche über einen Internetbrowser auf einem Computersystem abgelegt und gespeichert
+          <p>Die Internetseiten der Wanna Eat verwenden Cookies. Cookies sind Textdateien, welche über einen Internetbrowser auf einem Computersystem abgelegt und gespeichert
              werden.</p>
           
           <p>Zahlreiche Internetseiten und Server verwenden Cookies. Viele Cookies enthalten eine sogenannte Cookie-ID. Eine Cookie-ID ist eine eindeutige Kennung des Cookies. Sie
@@ -112,7 +112,7 @@
              Dies ermöglicht es den besuchten Internetseiten und Servern, den individuellen Browser der betroffenen Person von anderen Internetbrowsern, die andere Cookies
              enthalten, zu unterscheiden. Ein bestimmter Internetbrowser kann über die eindeutige Cookie-ID wiedererkannt und identifiziert werden.</p>
           
-          <p>Durch den Einsatz von Cookies kann die Dumplings den Nutzern dieser Internetseite nutzerfreundlichere Services bereitstellen, die ohne die Cookie-Setzung nicht möglich
+          <p>Durch den Einsatz von Cookies kann die Wanna Eat den Nutzern dieser Internetseite nutzerfreundlichere Services bereitstellen, die ohne die Cookie-Setzung nicht möglich
              wären.</p>
           
           <p>Mittels eines Cookies können die Informationen und Angebote auf unserer Internetseite im Sinne des Benutzers optimiert werden. Cookies ermöglichen uns, wie bereits
@@ -127,26 +127,26 @@
              Internetbrowser, sind unter Umständen nicht alle Funktionen unserer Internetseite vollumfänglich nutzbar.</p>
           
           <h4>4. Erfassung von allgemeinen Daten und Informationen</h4>
-          <p>Die Internetseite der Dumplings erfasst mit jedem Aufruf der Internetseite durch eine betroffene Person oder ein automatisiertes System eine Reihe von allgemeinen
+          <p>Die Internetseite der Wanna Eat erfasst mit jedem Aufruf der Internetseite durch eine betroffene Person oder ein automatisiertes System eine Reihe von allgemeinen
              Daten und Informationen. Diese allgemeinen Daten und Informationen werden in den Logfiles des Servers gespeichert. Erfasst werden können die (1) verwendeten
              Browsertypen und Versionen, (2) das vom zugreifenden System verwendete Betriebssystem, (3) die Internetseite, von welcher ein zugreifendes System auf unsere
              Internetseite gelangt (sogenannte Referrer), (4) die Unterwebseiten, welche über ein zugreifendes System auf unserer Internetseite angesteuert werden, (5) das Datum
              und die Uhrzeit eines Zugriffs auf die Internetseite, (6) eine Internet-Protokoll-Adresse (IP-Adresse), (7) der Internet-Service-Provider des zugreifenden Systems und
              (8) sonstige ähnliche Daten und Informationen, die der Gefahrenabwehr im Falle von Angriffen auf unsere informationstechnologischen Systeme dienen.</p>
           
-          <p>Bei der Nutzung dieser allgemeinen Daten und Informationen zieht die Dumplings keine Rückschlüsse auf die betroffene Person. Diese Informationen werden vielmehr
+          <p>Bei der Nutzung dieser allgemeinen Daten und Informationen zieht die Wanna Eat keine Rückschlüsse auf die betroffene Person. Diese Informationen werden vielmehr
              benötigt, um (1) die Inhalte unserer Internetseite korrekt auszuliefern, (2) die Inhalte unserer Internetseite sowie die Werbung für diese zu optimieren, (3) die
              dauerhafte Funktionsfähigkeit unserer informationstechnologischen Systeme und der Technik unserer Internetseite zu gewährleisten sowie (4) um Strafverfolgungsbehörden
              im Falle eines Cyberangriffes die zur Strafverfolgung notwendigen Informationen bereitzustellen. Diese anonym erhobenen Daten und Informationen werden durch die
-             Dumplings daher einerseits statistisch und ferner mit dem Ziel ausgewertet, den Datenschutz und die Datensicherheit in unserem Unternehmen zu erhöhen, um letztlich ein
+             Wanna Eat daher einerseits statistisch und ferner mit dem Ziel ausgewertet, den Datenschutz und die Datensicherheit in unserem Unternehmen zu erhöhen, um letztlich ein
              optimales Schutzniveau für die von uns verarbeiteten personenbezogenen Daten sicherzustellen. Die anonymen Daten der Server-Logfiles werden getrennt von allen durch
              eine betroffene Person angegebenen personenbezogenen Daten gespeichert.</p>
           
           <h4>5. Abonnement unseres Newsletters</h4>
-          <p>Auf der Internetseite der Dumplings wird den Benutzern die Möglichkeit eingeräumt, den Newsletter unseres Unternehmens zu abonnieren. Welche personenbezogenen Daten
+          <p>Auf der Internetseite der Wanna Eat wird den Benutzern die Möglichkeit eingeräumt, den Newsletter unseres Unternehmens zu abonnieren. Welche personenbezogenen Daten
              bei der Bestellung des Newsletters an den für die Verarbeitung Verantwortlichen übermittelt werden, ergibt sich aus der hierzu verwendeten Eingabemaske.</p>
           
-          <p>Die Dumplings informiert ihre Kunden und Geschäftspartner in regelmäßigen Abständen im Wege eines Newsletters über Angebote des Unternehmens. Der Newsletter unseres
+          <p>Die Wanna Eat informiert ihre Kunden und Geschäftspartner in regelmäßigen Abständen im Wege eines Newsletters über Angebote des Unternehmens. Der Newsletter unseres
              Unternehmens kann von der betroffenen Person grundsätzlich nur dann empfangen werden, wenn (1) die betroffene Person über eine gültige E-Mail-Adresse verfügt und (2)
              die betroffene Person sich für den Newsletterversand registriert. An die von einer betroffenen Person erstmalig für den Newsletterversand eingetragene E-Mail-Adresse
              wird aus rechtlichen Gründen eine Bestätigungsmail im Double-Opt-In-Verfahren versendet. Diese Bestätigungsmail dient der Überprüfung, ob der Inhaber der
@@ -167,19 +167,19 @@
              mitzuteilen.</p>
           
           <h4>6. Newsletter-Tracking</h4>
-          <p>Die Newsletter der Dumplings enthalten sogenannte Zählpixel. Ein Zählpixel ist eine Miniaturgrafik, die in solche E-Mails eingebettet wird, welche im HTML-Format
+          <p>Die Newsletter der Wanna Eat enthalten sogenannte Zählpixel. Ein Zählpixel ist eine Miniaturgrafik, die in solche E-Mails eingebettet wird, welche im HTML-Format
              versendet werden, um eine Logdatei-Aufzeichnung und eine Logdatei-Analyse zu ermöglichen. Dadurch kann eine statistische Auswertung des Erfolges oder Misserfolges von
-             Online-Marketing-Kampagnen durchgeführt werden. Anhand des eingebetteten Zählpixels kann die Dumplings erkennen, ob und wann eine E-Mail von einer betroffenen Person
+             Online-Marketing-Kampagnen durchgeführt werden. Anhand des eingebetteten Zählpixels kann die Wanna Eat erkennen, ob und wann eine E-Mail von einer betroffenen Person
              geöffnet wurde und welche in der E-Mail befindlichen Links von der betroffenen Person aufgerufen wurden.</p>
           
           <p>Solche über die in den Newslettern enthaltenen Zählpixel erhobenen personenbezogenen Daten, werden von dem für die Verarbeitung Verantwortlichen gespeichert und
              ausgewertet, um den Newsletterversand zu optimieren und den Inhalt zukünftiger Newsletter noch besser den Interessen der betroffenen Person anzupassen. Diese
              personenbezogenen Daten werden nicht an Dritte weitergegeben. Betroffene Personen sind jederzeit berechtigt, die diesbezügliche gesonderte, über das
              Double-Opt-In-Verfahren abgegebene Einwilligungserklärung zu widerrufen. Nach einem Widerruf werden diese personenbezogenen Daten von dem für die Verarbeitung
-             Verantwortlichen gelöscht. Eine Abmeldung vom Erhalt des Newsletters deutet die Dumplings automatisch als Widerruf.</p>
+             Verantwortlichen gelöscht. Eine Abmeldung vom Erhalt des Newsletters deutet die Wanna Eat automatisch als Widerruf.</p>
           
           <h4>7. Kontaktmöglichkeit über die Internetseite</h4>
-          <p>Die Internetseite der Dumplings enthält aufgrund von gesetzlichen Vorschriften Angaben, die eine schnelle elektronische Kontaktaufnahme zu unserem Unternehmen sowie
+          <p>Die Internetseite der Wanna Eat enthält aufgrund von gesetzlichen Vorschriften Angaben, die eine schnelle elektronische Kontaktaufnahme zu unserem Unternehmen sowie
              eine unmittelbare Kommunikation mit uns ermöglichen, was ebenfalls eine allgemeine Adresse der sogenannten elektronischen Post (E-Mail-Adresse) umfasst. Sofern eine
              betroffene Person per E-Mail oder über ein Kontaktformular den Kontakt mit dem für die Verarbeitung Verantwortlichen aufnimmt, werden die von der betroffenen Person
              übermittelten personenbezogenen Daten automatisch gespeichert. Solche auf freiwilliger Basis von einer betroffenen Person an den für die Verarbeitung Verantwortlichen
@@ -261,16 +261,16 @@
                 <li>Die personenbezogenen Daten wurden in Bezug auf angebotene Dienste der Informationsgesellschaft gemäß Art. 8 Abs. 1 DS-GVO erhoben.</li>
               
               </ul>
-              <p>Sofern einer der oben genannten Gründe zutrifft und eine betroffene Person die Löschung von personenbezogenen Daten, die bei der Dumplings gespeichert sind,
-                 veranlassen möchte, kann sie sich hierzu jederzeit an einen Mitarbeiter des für die Verarbeitung Verantwortlichen wenden. Der Mitarbeiter der Dumplings wird
+              <p>Sofern einer der oben genannten Gründe zutrifft und eine betroffene Person die Löschung von personenbezogenen Daten, die bei der Wanna Eat gespeichert sind,
+                 veranlassen möchte, kann sie sich hierzu jederzeit an einen Mitarbeiter des für die Verarbeitung Verantwortlichen wenden. Der Mitarbeiter der Wanna Eat wird
                  veranlassen, dass dem Löschverlangen unverzüglich nachgekommen wird.</p>
               
-              <p>Wurden die personenbezogenen Daten von der Dumplings öffentlich gemacht und ist unser Unternehmen als Verantwortlicher gemäß Art. 17 Abs. 1 DS-GVO zur Löschung der
-                 personenbezogenen Daten verpflichtet, so trifft die Dumplings unter Berücksichtigung der verfügbaren Technologie und der Implementierungskosten angemessene
+              <p>Wurden die personenbezogenen Daten von der Wanna Eat öffentlich gemacht und ist unser Unternehmen als Verantwortlicher gemäß Art. 17 Abs. 1 DS-GVO zur Löschung der
+                 personenbezogenen Daten verpflichtet, so trifft die Wanna Eat unter Berücksichtigung der verfügbaren Technologie und der Implementierungskosten angemessene
                  Maßnahmen, auch technischer Art, um andere für die Datenverarbeitung Verantwortliche, welche die veröffentlichten personenbezogenen Daten verarbeiten, darüber in
                  Kenntnis zu setzen, dass die betroffene Person von diesen anderen für die Datenverarbeitung Verantwortlichen die Löschung sämtlicher Links zu diesen
                  personenbezogenen Daten oder von Kopien oder Replikationen dieser personenbezogenen Daten verlangt hat, soweit die Verarbeitung nicht erforderlich ist. Der
-                 Mitarbeiter der Dumplings wird im Einzelfall das Notwendige veranlassen.</p>
+                 Mitarbeiter der Wanna Eat wird im Einzelfall das Notwendige veranlassen.</p>
             </li>
             <li><h4>e) Recht auf Einschränkung der Verarbeitung</h4>
               <p>Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, von dem
@@ -291,9 +291,9 @@
                 </li>
               
               </ul>
-              <p>Sofern eine der oben genannten Voraussetzungen gegeben ist und eine betroffene Person die Einschränkung von personenbezogenen Daten, die bei der Dumplings
+              <p>Sofern eine der oben genannten Voraussetzungen gegeben ist und eine betroffene Person die Einschränkung von personenbezogenen Daten, die bei der Wanna Eat
                  gespeichert sind, verlangen möchte, kann sie sich hierzu jederzeit an einen Mitarbeiter des für die Verarbeitung Verantwortlichen wenden. Der Mitarbeiter der
-                 Dumplings wird die Einschränkung der Verarbeitung veranlassen.</p>
+                 Wanna Eat wird die Einschränkung der Verarbeitung veranlassen.</p>
             </li>
             <li><h4>f) Recht auf Datenübertragbarkeit</h4>
               <p>Jede von der Verarbeitung personenbezogener Daten betroffene Person hat das vom Europäischen Richtlinien- und Verordnungsgeber gewährte Recht, die sie betreffenden
@@ -308,7 +308,7 @@
                  personenbezogenen Daten direkt von einem Verantwortlichen an einen anderen Verantwortlichen übermittelt werden, soweit dies technisch machbar ist und sofern
                  hiervon nicht die Rechte und Freiheiten anderer Personen beeinträchtigt werden.</p>
               
-              <p>Zur Geltendmachung des Rechts auf Datenübertragbarkeit kann sich die betroffene Person jederzeit an einen Mitarbeiter der Dumplings wenden.</p>
+              <p>Zur Geltendmachung des Rechts auf Datenübertragbarkeit kann sich die betroffene Person jederzeit an einen Mitarbeiter der Wanna Eat wenden.</p>
             
             </li>
             <li>
@@ -317,20 +317,20 @@
                  sich aus ihrer besonderen Situation ergeben, jederzeit gegen die Verarbeitung sie betreffender personenbezogener Daten, die aufgrund von Art. 6 Abs. 1 Buchstaben e
                  oder f DS-GVO erfolgt, Widerspruch einzulegen. Dies gilt auch für ein auf diese Bestimmungen gestütztes Profiling.</p>
               
-              <p>Die Dumplings verarbeitet die personenbezogenen Daten im Falle des Widerspruchs nicht mehr, es sei denn, wir können zwingende schutzwürdige Gründe für die
+              <p>Die Wanna Eat verarbeitet die personenbezogenen Daten im Falle des Widerspruchs nicht mehr, es sei denn, wir können zwingende schutzwürdige Gründe für die
                  Verarbeitung nachweisen, die den Interessen, Rechten und Freiheiten der betroffenen Person überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung
                  oder Verteidigung von Rechtsansprüchen.</p>
               
-              <p>Verarbeitet die Dumplings personenbezogene Daten, um Direktwerbung zu betreiben, so hat die betroffene Person das Recht, jederzeit Widerspruch gegen die
+              <p>Verarbeitet die Wanna Eat personenbezogene Daten, um Direktwerbung zu betreiben, so hat die betroffene Person das Recht, jederzeit Widerspruch gegen die
                  Verarbeitung der personenbezogenen Daten zum Zwecke derartiger Werbung einzulegen. Dies gilt auch für das Profiling, soweit es mit solcher Direktwerbung in
-                 Verbindung steht. Widerspricht die betroffene Person gegenüber der Dumplings der Verarbeitung für Zwecke der Direktwerbung, so wird die Dumplings die
+                 Verbindung steht. Widerspricht die betroffene Person gegenüber der Wanna Eat der Verarbeitung für Zwecke der Direktwerbung, so wird die Wanna Eat die
                  personenbezogenen Daten nicht mehr für diese Zwecke verarbeiten.</p>
               
               <p>Zudem hat die betroffene Person das Recht, aus Gründen, die sich aus ihrer besonderen Situation ergeben, gegen die sie betreffende Verarbeitung personenbezogener
-                 Daten, die bei der Dumplings zu wissenschaftlichen oder historischen Forschungszwecken oder zu statistischen Zwecken gemäß Art. 89 Abs. 1 DS-GVO erfolgen,
+                 Daten, die bei der Wanna Eat zu wissenschaftlichen oder historischen Forschungszwecken oder zu statistischen Zwecken gemäß Art. 89 Abs. 1 DS-GVO erfolgen,
                  Widerspruch einzulegen, es sei denn, eine solche Verarbeitung ist zur Erfüllung einer im öffentlichen Interesse liegenden Aufgabe erforderlich.</p>
               
-              <p>Zur Ausübung des Rechts auf Widerspruch kann sich die betroffene Person direkt an jeden Mitarbeiter der Dumplings oder einen anderen Mitarbeiter wenden. Der
+              <p>Zur Ausübung des Rechts auf Widerspruch kann sich die betroffene Person direkt an jeden Mitarbeiter der Wanna Eat oder einen anderen Mitarbeiter wenden. Der
                  betroffenen Person steht es ferner frei, im Zusammenhang mit der Nutzung von Diensten der Informationsgesellschaft, ungeachtet der Richtlinie 2002/58/EG, ihr
                  Widerspruchsrecht mittels automatisierter Verfahren auszuüben, bei denen technische Spezifikationen verwendet werden.</p>
             </li>
@@ -343,7 +343,7 @@
                  der betroffenen Person enthalten oder (3) mit ausdrücklicher Einwilligung der betroffenen Person erfolgt.</p>
               
               <p>Ist die Entscheidung (1) für den Abschluss oder die Erfüllung eines Vertrags zwischen der betroffenen Person und dem Verantwortlichen erforderlich oder (2) erfolgt
-                 sie mit ausdrücklicher Einwilligung der betroffenen Person, trifft die Dumplings angemessene Maßnahmen, um die Rechte und Freiheiten sowie die berechtigten
+                 sie mit ausdrücklicher Einwilligung der betroffenen Person, trifft die Wanna Eat angemessene Maßnahmen, um die Rechte und Freiheiten sowie die berechtigten
                  Interessen der betroffenen Person zu wahren, wozu mindestens das Recht auf Erwirkung des Eingreifens einer Person seitens des Verantwortlichen, auf Darlegung des
                  eigenen Standpunkts und auf Anfechtung der Entscheidung gehört.</p>
               

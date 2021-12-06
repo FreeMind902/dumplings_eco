@@ -8,7 +8,7 @@
           <div class="card-header">
             <div class="row">
               <div class="col-6 mt-2">
-                <h3>Übersicht Speisekarten Extras</h3>
+                <h3>Übersicht der Options für Speisekarteneintrag</h3>
               </div>
               <div class="col-6">
                 <a href="{{ route('admin.foodlist.index') }}">

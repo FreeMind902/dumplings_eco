@@ -15,6 +15,12 @@ class FoodlistSubCategory extends Model
         'label_en',
         'sub_category_information_de',
         'sub_category_information_en',
+        'is_halal',
+        'is_veggie',
+        'is_vegan',
+        'is_spicy',
+        'spicy_level',
+        'container_size',
         'foodlist_categories_id',
     ];
     protected $hidden = [];

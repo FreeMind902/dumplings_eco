@@ -56,7 +56,6 @@
                 <tr>
                   <th scope="col">#</th>
                   {{--                  <th scope="col">Wird angezeigt</th>--}}
-                  <th scope="col">Kategorie</th>
                   <th scope="col">Überschrift</th>
                   <th scope="col">Start</th>
                   <th scope="col">Ende</th>
@@ -69,10 +68,9 @@
                   @foreach($news as $item)
                     <tr>
                       <td class="col">{{$item->id}}</td>
-                      <td class="col">{{$item->localizations->heading->category_label}}</td>
-                      <td class="col">{{$item->localizations->heading->label}}</td>
-                      <td class="col">@if(isset($item->start) AND !empty($item->start)){{Carbon\Carbon::parse($item->start)->format('m/d/Y')}} @else Kein Datum angegeben @endif</td>
-                      <td class="col">@if(isset($item->end) AND !empty($item->end)){{Carbon\Carbon::parse($item->end)->format('m/d/Y')}} @else Kein Datum angegeben @endif</td>
+                      <td class="col">{{$item->headline_de}}</td>
+                      <td class="col">@if(isset($item->display_from) AND !empty($item->display_from)){{Carbon\Carbon::parse($item->display_from)->format('d/m/Y')}} @else Kein Datum angegeben @endif</td>
+                      <td class="col">@if(isset($item->display_to) AND !empty($item->display_to)){{Carbon\Carbon::parse($item->display_to)->format('d/m/Y')}} @else Kein Datum angegeben @endif</td>
                       <td class="col-3">
                         <a class="text-decoration-none" href="{{route('admin.news.create',['id' => $item->id])}}">
                           <button type="button" class="btn btn-outline-info">

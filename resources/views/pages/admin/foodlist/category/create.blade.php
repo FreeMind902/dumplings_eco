@@ -45,7 +45,7 @@
           </div>
           <div class="card-body">
 
-            <form action="{{ route('admin.foodlist.category.update') }}" method="post"  enctype="multipart/form-data">
+            <form action="{{ route('admin.foodlist.category.update') }}" method="post" enctype="multipart/form-data">
               <div class="row pb-3">
                 <div class="col-12">
                   <button type="submit" class="btn btn-outline-primary">@if(isset($category)) Speichern @else Anlegen @endif</button>
@@ -77,8 +77,22 @@
                     <label for="german_info" class="pb-2">Zweite Überschrift</label>
                   </div>
                   <div class="col-10">
-                    <input id="german_info" name="category_information_de" type="text" class="form-control" value="@if(isset($category)){{$category->label_de}}@else{{old('label_de')}}@endif">
-
+                    <input id="german_info" name="category_information_de" type="text" class="form-control"
+                           value="@if(isset($category)){{$category->category_information_de}}@else{{old('category_information_de')}}@endif">
+                  </div>
+                  <div class="col-10 pt-3">
+                    <label for="german_info" class="pb-2">Dritte Überschrift</label>
+                  </div>
+                  <div class="col-10">
+                    <input id="german_info" name="category_second_information_de" type="text" class="form-control"
+                           value="@if(isset($category)){{$category->category_second_information_de}}@else{{old('category_second_information_de')}}@endif">
+                  </div>
+                  <div class="col-10 pt-3">
+                    <label for="german_footline_info" class="pb-2">Sternchentext</label>
+                  </div>
+                  <div class="col-10">
+                    <input id="german_footline_info" name="footline_de" type="text" class="form-control"
+                           value="@if(isset($category)){{$category->category_second_information_de}}@else{{old('category_second_information_de')}}@endif">
                   </div>
                 </div>
 
@@ -95,8 +109,22 @@
                     <label for="english_info" class="pb-2">Zweite Überschrift</label>
                   </div>
                   <div class="col-10">
-                    <input id="english_info" name="category_information_en" type="text" class="form-control" value="@if(isset($category)){{$category->label_en}}@else{{old('label_en')}}@endif">
-
+                    <input id="english_info" name="category_information_en" type="text" class="form-control"
+                           value="@if(isset($category)){{$category->category_information_en}}@else{{old('category_information_en')}}@endif">
+                  </div>
+                  <div class="col-10 pt-3">
+                    <label for="english_info" class="pb-2">Dritte Überschrift</label>
+                  </div>
+                  <div class="col-10">
+                    <input id="english_info" name="category_second_information_en" type="text" class="form-control"
+                           value="@if(isset($category)){{$category->category_second_information_en}}@else{{old('category_second_information_en')}}@endif">
+                  </div>
+                  <div class="col-10 pt-3">
+                    <label for="english_footline_info" class="pb-2">Sternchentext</label>
+                  </div>
+                  <div class="col-10">
+                    <input id="english_footline_info" name="footline_en" type="text" class="form-control"
+                           value="@if(isset($category)){{$category->category_second_information_en}}@else{{old('category_second_information_en')}}@endif">
                   </div>
                 </div>
               </div>

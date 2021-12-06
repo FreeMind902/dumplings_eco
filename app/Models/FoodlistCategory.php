@@ -16,7 +16,11 @@ class FoodlistCategory extends Model
         'image_file_name',
         'category_information_de',
         'category_information_en',
+        'category_second_information_de',
+        'category_second_information_en',
         'context_type_de',
+        'footline_de',
+        'footline_en',
     ];
     protected $hidden = [];
 

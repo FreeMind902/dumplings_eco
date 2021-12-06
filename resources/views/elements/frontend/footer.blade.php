@@ -1,50 +1,50 @@
 <footer class="footer">
   <div class="container g-0">
-    
+
     <div class="row ps-3">
-      
+
       <div class="col-12 col-md-6 mt-3 d-none d-md-block">
-        
+
         <span class=""><b>Wannaeat</b></span>
         <hr class="footer-hr">
         <span>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
           </span>
-      
+
       </div>
-      
+
       <div class="col-12 col-md-3 ps-5 mt-3">
         <span class=""><b>Links</b></span>
         <hr class="footer-hr">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link nav-link-footer" href="#">Story</a>
+            <a class="nav-link text-decoration-none text-dark" href="{{ route('frontend.index') }}">Story</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-footer" href="#">Our Foods</a>
+          <li class="nav-item ">
+            <a class="nav-link text-decoration-none text-dark" href="{{ route('frontend.foodlist') }}">Our Foods</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-footer" href="#">Anfahrt</a>
+          <li class="nav-item ">
+            <a class="nav-link text-decoration-none text-dark" href="{{ route('frontend.approach') }}">Anfahrt</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-footer" href="#">Impressum</a>
+          <li class="nav-item ">
+            <a class="nav-link text-decoration-none text-dark" href="{{ route('frontend.impress') }}">Impressum</a>
           </li>
-          <li class="nav-item mb-3">
-            <a class="nav-link nav-link-footer" href="#">Datenschutz</a>
+          <li class="nav-item ">
+            <a class="nav-link text-decoration-none text-dark" href="{{ route('frontend.privacy') }}">Datenschutz</a>
           </li>
         </ul>
-      
+
       </div>
-      
+
       <div class="col-12 col-md-3 ps-5 mt-3">
-        
+
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
           <span><b>Kontakt</b></span>
         </div>
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
           <hr class="footer-hr">
         </div>
-        
+
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-2">
           <span>
            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -82,7 +82,7 @@
             </span>
 {{--          <span>+49123646789</span>--}}
         </div>
-      
+
       </div>
     </div>
   </div>

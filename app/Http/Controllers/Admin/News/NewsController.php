@@ -19,4 +19,10 @@ class NewsController extends Controller {
     
     return redirect()->route('admin.news.index')->with('status', 'News Empfänger erfolgreich gelöscht');
   }
+
+  public function removeImage($id) {
+    $this->newsService->deleteImage($id);
+
+    return redirect()->route('admin.news.create',[$id])->with('status', 'News Empfänger erfolgreich gelöscht');
+  }
 }

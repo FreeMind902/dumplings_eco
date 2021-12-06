@@ -41,7 +41,7 @@
               </div>
               <div class="col-6">
 
-                <a href="{{ route('admin.index') }}">
+                <a href="{{ route('admin.subscriber.index') }}">
 
                   <button class="btn btn-outline-info float-end mt-1" type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -62,60 +62,58 @@
           <div class="card-body">
             <form action="{{ route('admin.subscriber.update') }}" method="post">
               @csrf
-              <input type="hidden" name="subscriber[id]" value="@if(isset($subscriber)) {{ $subscriber->id ?? null }} @endif">
-              <div class="row mb-3">
+              <input type="hidden" name="id" value="@if(isset($subscriber)) {{ $subscriber->id ?? null }} @endif">
 
+              <div class="row mb-2">
+                <div class="col-6">
+                  <a href="">
+                    <button type="submit" class="btn btn-outline-primary">@if(isset($subscriber)) Speichern @else Anlegen @endif</button>
+                  </a>
+                </div>
+              </div>
+              <div class="row mb-3">
                 <div class="col-12">
                   <div class="form-check">
-                    <input name="subscriber[is_active]" class="form-check-input" type="checkbox" value="1" id="flexCheckDefault"
-                           @if (isset($subscriber) && $subscriber->is_active == 1) checked @endif >
+                    <input name="receives_newsletter" class="form-check-input" type="checkbox" value="1" id="flexCheckDefault"
+                           @if (isset($subscriber) && $subscriber->receives_newsletter == 1) checked @endif >
                     <label class="form-check-label" for="flexCheckDefault">Erhält Newsletter
                     </label>
                   </div>
                 </div>
-
               </div>
 
               <div class="row mb-3">
-                @if( isset($languages))
-                  <div class="col-12 col-md-4">
-                    <p class="form-label">Sprache</p>
-                    <select name="subscriber[language_id]" id="newsletter_category_select" class="form-select">
-                      @foreach($languages as $language)
-                        <option value="{{$language->id}}">{{$language->label}}</option>
-                      @endforeach
-                    </select>
-                  </div>
-                @endif
+                <div class="col-12">
+                  <p class="form-label">Sprache des Abonennten (In dieser Sprache wird der Newsletter versendet)</p>
+                </div>
+                <div class="col-4">
+                  <select name="language_iso_code" id="newsletter_category_select" class="form-select">
+                    <option value="de">Deutsch</option>
+                    <option value="en">Englisch</option>
+                  </select>
+                </div>
               </div>
-
               <div id="subrscriber_form" class="row mb-3">
                 <div class="col-12 col-md-6">
                   <p class="form-label">Name</p>
-                  <input name="subscriber[name]" value="{{ $subscriber->name ?? old('subscriber.name') ?? null}}" type="text" class="form-control"
+                  <input name="name" value="{{ $subscriber->name ?? old('subscriber.name') ?? null}}" type="text" class="form-control"
                          aria-describedby="subscriber-name">
                 </div>
               </div>
-
               <div class="row mb-3">
                 <div class="col-12 col-md-8">
                   <p class="form-label">Email-Adresse</p>
-                  <input name="subscriber[email]" value="{{ $subscriber->email ?? old('subscriber.email') ?? null}}" type="text" class="form-control"
+                  <input name="email" value="{{ $subscriber->email ?? old('subscriber.email') ?? null}}" type="text" class="form-control"
                          aria-describedby="subscribers-email">
                 </div>
               </div>
 
               <div class="row mb-2">
-
                 <div class="col-6">
-
                   <a href="">
-                    <button type="submit" class="btn btn-primary">@if(isset($subscriber)) Speichern @else Anlegen @endif</button>
-
+                    <button type="submit" class="btn btn-outline-primary">@if(isset($subscriber)) Speichern @else Anlegen @endif</button>
                   </a>
-
                 </div>
-
               </div>
 
             </form>

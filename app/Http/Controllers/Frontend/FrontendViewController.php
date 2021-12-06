@@ -15,7 +15,7 @@ class FrontendViewController extends FrontendController
     {
         return view('pages.frontend.foodlist',
             [
-                'categories' => $this->foodlistCategoryService->getAllFooListCategoriesWithSubCategoriesAndFoodListEntriesWithFooListExtras()
+                'categories' => $this->foodlistCategoryService->getAllFooListCategoriesWithSubCategoriesAndFoodListEntriesWithFooListOptions()
             ]
         );
     }
@@ -24,10 +24,10 @@ class FrontendViewController extends FrontendController
     {
         return view(
             'pages.frontend.index',
-//            [
-//                'stories' => $this->storyService->allDependingOnLanguage($request) ?? null,
-//                'news' =>$this->newsService->allDependingOnLanguage(),
-//            ]
+            [
+                'stories' => $this->storyService->all() ?? null,
+                'news' =>$this->newsService->allActive(),
+            ]
         );
     }
 

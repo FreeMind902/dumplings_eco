@@ -7,7 +7,7 @@ use App\Http\Requests\StoreFoodListEntryRequest;
 use App\Http\Requests\StoreSubCategoryRequest;
 use App\Models\FoodlistCategory;
 use App\Models\FoodlistEntry;
-use App\Models\FoodlistExtra;
+use App\Models\FoodlistOption;
 use App\Models\FoodlistSubCategory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -15,8 +15,10 @@ use Illuminate\Support\Str;
 
 class FoodlistCategoryService
 {
-    public function insertFoodlistEntry(StoreFoodListEntryRequest $request) {
+//    public function insertFoodlistEntry(StoreFoodListEntryRequest $request) {
+    public function insertFoodlistEntry(Request $request) {
         $postData = $request->all();
+//        dd($postData);
         unset($postData['_token']);
         $foodlistCategory = FoodlistEntry::updateOrCreate(
             ['id' => $postData['id']],
@@ -26,8 +28,11 @@ class FoodlistCategoryService
         return $foodlistCategory;
     }
 
-    public function insertCategory(StoreCategoryRequest $request) {
+//    public function insertCategory(StoreCategoryRequest $request) {
+    public function insertCategory(Request $request) {
+
         $postData = $request->all();
+//        dd($postData);
         unset($postData['_token']);
         $foodListCategory = FoodlistCategory::updateOrCreate(
             ['id' => $postData['id']],
@@ -35,17 +40,19 @@ class FoodlistCategoryService
         );
     }
 
-    public function insertFoodlistExtra(Request $request) {
+    public function insertFoodlistOption(Request $request) {
         $postData = $request->all();
         unset($postData['_token']);
-        $foodListCategory = FoodlistExtra::updateOrCreate(
+        $foodListCategory = FoodlistOption::updateOrCreate(
             ['id' => $postData['id']],
             $postData
         );
     }
 
-    public function insertSubCategory(StoreSubCategoryRequest $request) {
+//    public function insertSubCategory(StoreSubCategoryRequest $request) {
+    public function insertSubCategory(Request $request) {
         $postData = $request->all();
+//        dd($postData);
         unset($postData['_token']);
         $foodlistCategory = FoodlistSubCategory::updateOrCreate(
             ['id' => $postData['id']],
@@ -54,24 +61,24 @@ class FoodlistCategoryService
         return $foodlistCategory;
     }
 
-    public function getAllFooListCategoriesWithSubCategoriesAndFoodListEntriesWithFooListExtras() {
-        return FoodlistCategory::with('foodlistSubCategories.foodListEntries.foodListExtras')->get();
+    public function getAllFooListCategoriesWithSubCategoriesAndFoodListEntriesWithFooListOptions() {
+        return FoodlistCategory::with('foodlistSubCategories.foodListEntries.foodlistOptions')->get();
     }
 
-    public function getAllFoodlistEntriesWithExtrasAndCategoryWithSubCategory() {
-        return FoodlistEntry::with('foodListExtras','foodlistSubCategory.category')->get();
+    public function getAllFoodlistEntriesWithOptionsAndCategoryWithSubCategory() {
+        return FoodlistEntry::with('foodlistOptions','foodlistSubCategory.category')->get();
     }
 
-    public function getAllFoodlistExtrasWithFoodListEntry() {
-        return FoodlistExtra::has('foodListEntry')->with('foodListEntry')->get();
+    public function getAllfoodlistOptionsWithFoodListEntry() {
+        return FoodlistOption::has('foodListEntry')->with('foodListEntry')->get();
     }
 
-    public function getSingleFoodlistExtraWithFoodListEntryById($id) {
-        return FoodlistExtra::with('foodListEntry')->where('id', $id)->first();
+    public function getSingleFoodlistOptionWithFoodListEntryById($id) {
+        return FoodlistOption::with('foodListEntry')->where('id', $id)->first();
     }
 
     public function getsSingleFoodlistEntryWithSubCategoryById($id) {
-        return FoodlistEntry::with('subCategory')->where('id', $id)->first();
+        return FoodlistEntry::with('foodlistSubCategory')->where('id', $id)->first();
     }
 
     public function getAllFoodlistEntries() {
@@ -131,15 +138,10 @@ class FoodlistCategoryService
         }
     }
 
-    public function deleteFoodlistExtra($id) {
+    public function deleteFoodlistOption($id) {
         if($id) {
-            FoodlistExtra::whereId($id)->delete();
+            FoodlistOption::whereId($id)->delete();
         }
-    }
-
-    public function contextTypes() {
-        $contextTypes = ContextType::get();
-        return $contextTypes;
     }
 
     public function toObject($array) {

@@ -14,13 +14,14 @@ use Illuminate\Support\Facades\Storage;
 
 class FoodlistController extends Controller
 {
-    public function updateFoodListEntry(StoreFoodListEntryRequest $request) {
+//    public function updateFoodListEntry(StoreFoodListEntryRequest $request) {
+    public function updateFoodListEntry(Request $request) {
         $this->foodlistCategoryService->insertFoodlistEntry($request);
         return redirect()->route('admin.foodlist.index')->with('status', 'Erfolgreich angelegt');
     }
 
     public function updateFoodListExtra(Request $request) {
-        $this->foodlistCategoryService->insertFoodlistExtra($request);
+        $this->foodlistCategoryService->insertFoodlistOption($request);
         return redirect()->route('admin.foodlist.extra.index')->with('status', 'Erfolgreich angelegt');
     }
 
@@ -29,13 +30,13 @@ class FoodlistController extends Controller
         return redirect()->route('admin.foodlist.category.index')->with('status', 'Erfolgreich angelegt');
     }
 
-    public function updateSubCategory(StoreSubCategoryRequest $request) {
+    public function updateSubCategory(Request $request) {
         $this->foodlistCategoryService->insertSubCategory($request);
         return redirect()->route('admin.foodlist.sub-category.index')->with('status', 'Erfolgreich angelegt');
     }
 
     public function removeFoodListExtra($id) {
-        $this->foodlistCategoryService->deleteFoodlistExtra($id);
+        $this->foodlistCategoryService->deleteFoodlistOption($id);
         return redirect()->route('admin.foodlist.extra.index')->with('status', 'Erfolgreich gelöscht');
     }
 

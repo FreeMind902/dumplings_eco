@@ -7,107 +7,45 @@ use App\Models\Story;
 use App\Models\StoryLocalization;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Storage;
 
 class StoryService
 {
     public function insert(Request $request) {
-        $postData     = $request->all('story')['story'];
+
+        $postData = $request->all();
+        unset($postData['_token']);
+//        dd($postData);
+//        dump($postData);
         $imageService = new ImageService();
-//dd($postData);
+
         if(!isset($postData['has_image'])) {
             unset($postData['image']);
-            $file       = $request->file('story.image');
-            $storedFile = $imageService->put($file);
-
-            $postData['image_id']     = $storedFile->id;
-            $postData['img_filename'] = $storedFile->filename;
-            $postData['img_path']     = $storedFile->path;
-            $imageId                  = $storedFile->id;
-        } else {
-
-            $imageId = $postData['image_id'];
+            $file                        = $request->file('image');
+            $storedFile                  = $imageService->put($file);
+            $postData['image_file_name'] = $storedFile->image_file_name;
+            $postData['image_path']      = $storedFile->image_path;
         }
+//            dd($postData);
 
         if(!isset($postData['is_active'])) {
             $postData['is_active'] = 0;
         }
-
         $story = Story::updateOrCreate(
             ['id' => $postData['id']],
-            [
-                'is_active' => $postData['is_active'],
-                'image_id'  => $postData['image_id'],
-            ],
+            $postData,
         );
 //        dump('$story', $story);
-
-        foreach($postData['labels'] as $key => $contentType) {
-//            dump('$contentType', $contentType);
-//            dump('$key', $key);
-            foreach($contentType as $localization) {
-//                dump('$localization', $localization);
-                $localizationUpdated = Localization::updateOrCreate(
-                    ['id' => $localization['localization_id']],
-                    [
-                        'label'           => $localization['label'],
-                        'language_id'     => $localization['language_id'],
-                        'content_type_id' => $localization['content_type_id'],
-                    ]);
-                if($localization['localization_id'] == null) {
-                    $localization['localization_id'] = $localizationUpdated->id;
-                }
-//            dump($localizationUpdated);
-//            dump($story->id);
-
-                $storyLocalization = StoryLocalization::updateOrCreate(
-                    ['id' => $localization['story_localization_id']],
-                    [
-                        'story_id'        => $story->id,
-                        'localization_id' => $localizationUpdated->id,
-                    ]);
-//            dump($storyLocalization);
-
-            }
-        }
-
+//
 //        dd('HIIIIERR');
         return $story;
     }
 
-    public function allGerman() {
-//        dump('storyService->allGerman()');
-
-        $storyArray = [];
-        $poststory  = [];
-        $storyRaw   = Story::has('storyLocalizations.localizationGerman')
-            ->with([
-                'storyLocalizationsGerman.localizationGerman.language',
-                'storyLocalizationsGerman.localizationGerman.contentType'
-            ])->get();
-//        dump($storyRaw);
-        foreach($storyRaw as $story) {
-//            dump($story);
-
-            $storyArray['id']        = $story->id;
-            $storyArray['is_active'] = $story->is_active;
-            foreach($story->storyLocalizationsGerman as $item) {
-//                dump($item);
-
-                $storyArray['localizations'][$item->localizationGerman->contentType->label] = [
-                    'id'              => $item->id,
-                    'label'           => $item->localizationGerman->label,
-                    'iso_code'        => $item->localizationGerman->language->iso_code,
-                    'localization_id' => $item->localizationGerman->id,
-                    'content_type_id' => $item->localizationGerman->content_type_id,
-                    'language_id'     => $item->localizationGerman->language_id,
-                ];
-
-            }
-            $poststory[] = $storyArray;
-        }
-//        dump($poststory);
+    public function all() {
+        $story = Story::get();
+//        dump(Story::get());
 //        dd('HIIERR');
-        return $this->toObject($poststory);
+        return Story::get();
     }
 
     public function allDependingOnLanguage($request) {
@@ -195,49 +133,31 @@ class StoryService
         return Story::with('image')->whereIsActive('1')->get();
     }
 
-    public function singleWithImage($id) {
-
-        $storyRaw = Story::with([
-            'storyLocalizations.localization.language',
-            'storyLocalizations.localization.contentType',
-            'image'
-        ])->whereId($id)->first();
-
-//        dump($storyRaw);
-
-        $story['id']        = $storyRaw->id;
-        $story['is_active'] = $storyRaw->is_active;
-
-
-        if($storyRaw->image != null) {
-
-            $story['image_id']   = $storyRaw->image->id ?? null;
-            $story['image_path'] = $storyRaw->image->path ?? null;
-        }
-
-        foreach($storyRaw->storyLocalizations as $item) {
-//            dump($item->localization->contentType->label);
-            $story['localizations'][$item->localization->language->label][$item->localization->contentType->label] = [
-                'id'              => $item->id,
-                'label'           => $item->localization->label,
-                'iso_code'        => $item->localization->language->iso_code,
-                'category_id'     => $storyRaw->category_id,
-                'localization_id' => $item->localization->id,
-                'content_type_id' => $item->localization->content_type_id,
-                'language_id'     => $item->localization->language_id,
-            ];
-        }
-//        dump($story);
-//        dd('HIIIERRR');
-        return $this->toObject($story);
+    public function single($id = null) {
+        return Story::whereId($id)->first();
 
     }
 
-    public function delete($id) {
-        return Story::whereId($id)->delete();
+    public function delete($id = null) {
+        if($id) {
+            $story = $this->single($id);
+            if($story) {
+                $this->deleteImage($id);
+                $story->delete();
+            }
+        }
     }
 
-    public function toObject($array) {
-        return json_decode(json_encode($array));
+    public function deleteImage($id = null) {
+        if ($id) {
+            $story                  = $this->single($id);
+            dd($story);
+            $story->image_file_name = null;
+            $story->image_path      = null;
+            $story->save();
+            if(Storage::exists('public/images/upload/stories/' . $story->image_file_name)) {
+                Storage::delete('public/images/upload/stories/' . $story->image_file_name);
+            }
+        }
     }
 }

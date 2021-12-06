@@ -26,19 +26,19 @@
           </div>
           <div class="card-body">
 
-            <h5 class="card-title">Eventuell Beschreibung</h5>
-            <p class="card-text">hinzufügen.</p>
-            <a href="{{ route('admin.foodlist.category.create') }}">
-              <button class="btn btn-outline-success" type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                     stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                  <line x1="12" y1="5" x2="12" y2="19"/>
-                  <line x1="5" y1="12" x2="19" y2="12"/>
-                </svg>
+{{--            <h5 class="card-title">Eventuell Beschreibung</h5>--}}
+{{--            <p class="card-text">hinzufügen.</p>--}}
+{{--            <a href="{{ route('admin.foodlist.category.create') }}">--}}
+{{--              <button class="btn btn-outline-success" type="button">--}}
+{{--                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"--}}
+{{--                     stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">--}}
+{{--                  <line x1="12" y1="5" x2="12" y2="19"/>--}}
+{{--                  <line x1="5" y1="12" x2="19" y2="12"/>--}}
+{{--                </svg>--}}
 
-                Eintrag anlegen
-              </button>
-            </a>
+{{--                Eintrag anlegen--}}
+{{--              </button>--}}
+{{--            </a>--}}
             <div class="table-responsive">
               <table class="table">
                 <thead>
@@ -69,16 +69,16 @@
                               Bearbeiten
                             </button>
                           </a>
-                          <a class="text-decoration-none" href="{{route('admin.foodlist.category.remove',['id' => $category->id])}}">
-                            <button type="button" class="btn btn-outline-danger ms-2">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">
-                                <line x1="18" y1="6" x2="6" y2="18"/>
-                                <line x1="6" y1="6" x2="18" y2="18"/>
-                              </svg>
-                              Löschen
-                            </button>
-                          </a>
+{{--                          <a class="text-decoration-none" href="{{route('admin.foodlist.category.remove',['id' => $category->id])}}">--}}
+{{--                            <button type="button" class="btn btn-outline-danger ms-2">--}}
+{{--                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"--}}
+{{--                                   stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x">--}}
+{{--                                <line x1="18" y1="6" x2="6" y2="18"/>--}}
+{{--                                <line x1="6" y1="6" x2="18" y2="18"/>--}}
+{{--                              </svg>--}}
+{{--                              Löschen--}}
+{{--                            </button>--}}
+{{--                          </a>--}}
 
                         </td>
 

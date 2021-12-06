@@ -1,11 +1,4 @@
-DATABASE
+ADMIN NOTES
 
-1. add to DB
-dumplings
-    languages = ['Deutsch','Englisch'] // iso_code format de, en
-    content_types = ['heading','content'] // Reihenfolge wichtig
-    category_has_context_types = ['News', 'Newsletter, 'Speisekarte] // einfach eintragen4
 
-2. create admin user
-    in FrontendViewController
-        comment in function createAdminUser()
+box_sizes = ['small', 'middle', 'big']

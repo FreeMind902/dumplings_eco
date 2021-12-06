@@ -7,9 +7,7 @@ class SubscriberViewController extends SubscriberController {
     return view(
         'pages.admin.subscriber.create',
         [
-            'categories' => $this->toObject($this->foodlistCategoryService->allNewsletterCategoriesGerman()),
             'subscriber' => ($id) ? $this->subscriberService->single($id) : null,
-            'languages' => $this->languageService->all(),
         ],
     );
   }

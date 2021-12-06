@@ -157,3 +157,22 @@ button:disabled {
     cursor: not-allowed;
     pointer-events: all !important;
 }
+
+@font-face {
+    font-family: DreamyLand;
+    src: url(../fonts/dreamy_land_medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Futura;
+    src: url(../fonts/futura_pt_medium_italic.ttf) format('truetype');
+}
+
+.font-dreamyland {
+    font-family: 'DreamyLand', sans-serif;
+    font-stretch: extra-expanded !important;
+}
+
+.font-futura {
+    font-family: 'Futura', sans-serif;
+}
