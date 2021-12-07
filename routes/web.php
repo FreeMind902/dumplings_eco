@@ -31,9 +31,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/linkstorage', function () {
+    Artisan::call('storage:link');
+});
 Auth::routes(['register' => false]);
 Route::get('/login', function() { return view('pages.frontend.login'); })->name('login');
-Route::get('/create-admin', [FrontendViewController::class, 'createAdminUser'])->name('createAdminUser');
+//Route::get('/create-admin', [FrontendViewController::class, 'createAdminUser'])->name('createAdminUser');
 
 Route::name('frontend.')->group(function() {
 

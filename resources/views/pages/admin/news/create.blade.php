@@ -101,7 +101,6 @@
                   <p class="form-label">Newsbild hochladen</p>
                   @if(isset($news->image_path))
                     <input type="hidden" name="has_image" placeholder="Choose image" value="1">
-
                     <img src="{{asset($news->image_path)}}" alt="" width="200" height="200">
                     <a href="{{route('admin.news.image.remove',['id'=>$news->id])}}">
                       <button type="button" class="btn btn-danger">Bild löschen</button>

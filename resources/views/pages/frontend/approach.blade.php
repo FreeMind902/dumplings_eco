@@ -13,7 +13,7 @@
     <div class="container mb-5">
 
       <div class="row justify-content-center pb-4">
-        <div class="col-10 col-md-12" style="background:url('/public/images/foodlist/subheader_headline_noodles_mobil_330x369_top.png') no-repeat; background-size: 100%">
+        <div class="col-10 col-md-12" style="background:url('/images/foodlist/subheader_headline_noodles_mobil_330x369_top.png') no-repeat; background-size: 100%">
           <div class="row ps-2 pt-2">
             <div class="col-12">
               <h4 class="mb-3"><b>Mit Bus & Bahn MOBIL</b></h4>
@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="row justify-content-center pb-4">
-        <div class="col-10 col-md-12" style="background:url('/public/images/foodlist/subheader_headline_noodles_mobil_330x369_top.png') no-repeat; background-size: 100%">
+        <div class="col-10 col-md-12" style="background:url('/images/foodlist/subheader_headline_noodles_mobil_330x369_top.png') no-repeat; background-size: 100%">
           <div class="row ps-2 pt-2">
             <div class="col-12">
               <h4 class="mb-3"><b>Mit Bus & Bahn MOBIL</b></h4>
@@ -50,7 +50,7 @@
     <div class="container mb-5">
 
       <div class="row justify-content-center pb-4">
-        <div class="col-6 col-md-6" style="background:url('/public/images/approach/approach_frame_layout_xxl_650x158_top.png') no-repeat; background-size: 95%">
+        <div class="col-6 col-md-6" style="background:url('/images/approach/approach_frame_layout_xxl_650x158_top.png') no-repeat; background-size: 95%">
           <div class="row ps-2 pt-2">
             <div class="col-12">
               <h4 class="mb-3"><b>MD Mit Bus & Bahn</b></h4>
@@ -62,7 +62,7 @@
             <img src="{{asset('images/approach/approach_frame_layout_xxl_650x158_bottom.png')}}" alt="header_bottom" width="320">
           </div>
         </div>
-        <div class="col-6 col-md-6" style="background:url('/public/images/approach/approach_frame_layout_xxl_650x158_top.png') no-repeat; background-size: 95%">
+        <div class="col-6 col-md-6" style="background:url('/images/approach/approach_frame_layout_xxl_650x158_top.png') no-repeat; background-size: 95%">
           <div class="row ps-2 pt-2">
             <div class="col-12">
               <h4 class="mb-3"><b>Mit PKW</b></h4>
@@ -80,7 +80,7 @@
 
       <div class="container mt-5">
 
-        <div class="row pe-3 pb-5" style="background:url('/public/images/approach/approach_map_footer_xxl_1320x560.png') no-repeat; background-size: 100%">
+        <div class="row pe-3 pb-5" style="background:url('/images/approach/approach_map_footer_xxl_1320x560.png') no-repeat; background-size: 100%">
           <div class="col-12">
             <div style="max-width:100%;overflow:hidden;color:red;width:1280px;height:280px;" class="pb-3">
               <div id="gmapcanvas" style="height:100%; width:100%;max-width:100%;">
@@ -102,7 +102,7 @@
     <div class="container mb-5">
 
       <div class="row justify-content-center pb-4">
-        <div class="col-6 col-md-6" style="background:url('/public/images/approach/approach_frame_layout_xxl_650x158_top.png') no-repeat; background-size: 95%">
+        <div class="col-6 col-md-6" style="background:url('/images/approach/approach_frame_layout_xxl_650x158_top.png') no-repeat; background-size: 95%">
           <div class="row ps-2 pt-2">
             <div class="col-12">
               <h4 class="mb-3"><b>LG Mit Bus & Bahn</b></h4>
@@ -114,7 +114,7 @@
             <img src="{{asset('images/approach/approach_frame_layout_xxl_650x158_bottom.png')}}" alt="header_bottom" width="430">
           </div>
         </div>
-        <div class="col-6 col-md-6" style="background:url('/public/images/approach/approach_frame_layout_xxl_650x158_top.png') no-repeat; background-size: 95%">
+        <div class="col-6 col-md-6" style="background:url('/images/approach/approach_frame_layout_xxl_650x158_top.png') no-repeat; background-size: 95%">
           <div class="row ps-2 pt-2">
             <div class="col-12">
               <h4 class="mb-3"><b>Mit PKW</b></h4>
@@ -132,7 +132,7 @@
 
       <div class="container mt-5">
 
-        <div class="row pe-3 pb-5" style="background:url('/public/images/approach/approach_map_footer_xxl_1320x560.png') no-repeat; background-size: 100%">
+        <div class="row pe-3 pb-5" style="background:url('/images/approach/approach_map_footer_xxl_1320x560.png') no-repeat; background-size: 100%">
           <div class="col-12">
             <div style="max-width:100%;overflow:hidden;color:red;width:1280px;height:380px;" class="pb-3">
               <div id="gmapcanvas" style="height:100%; width:100%;max-width:100%;">
@@ -154,7 +154,7 @@
   <div class="d-none d-xl-block d-xxl-none letter-spacing-5">
     <div class="container mb-5">
       <div class="row justify-content-center pb-4">
-        <div class="col-6 col-md-6" style="background:url('/public/images/approach/approach_frame_layout_xxl_650x158_top.png') no-repeat; background-size: 95%">
+        <div class="col-6 col-md-6" style="background:url('/images/approach/approach_frame_layout_xxl_650x158_top.png') no-repeat; background-size: 95%">
           <div class="row ps-2 pt-2">
             <div class="col-12">
               <h4 class="mb-3"><b>XL Mit Bus & Bahn</b></h4>
@@ -166,7 +166,7 @@
             <img src="{{asset('images/approach/approach_frame_layout_xxl_650x158_bottom.png')}}" alt="header_bottom" width="520">
           </div>
         </div>
-        <div class="col-6 col-md-6" style="background:url('/public/images/approach/approach_frame_layout_xxl_650x158_top.png') no-repeat; background-size: 95%">
+        <div class="col-6 col-md-6" style="background:url('/images/approach/approach_frame_layout_xxl_650x158_top.png') no-repeat; background-size: 95%">
           <div class="row ps-2 pt-2">
             <div class="col-12">
               <h4 class="mb-3"><b>Mit  PKW</b></h4>
@@ -181,7 +181,7 @@
       </div>
 
       <div class="container mt-5">
-        <div class="row pe-3 pb-5" style="background:url('/public/images/approach/approach_map_footer_xxl_1320x500.png') no-repeat; background-size: 100%">
+        <div class="row pe-3 pb-5" style="background:url('/images/approach/approach_map_footer_xxl_1320x500.png') no-repeat; background-size: 100%">
           <div class="col-12">
             <div style="max-width:100%;overflow:hidden;color:red;width:1280px;height:380px;" class="pb-3">
               <div id="gmapcanvas" style="height:100%; width:100%;max-width:100%;">
@@ -201,7 +201,7 @@
   <div class="d-none d-xxl-block letter-spacing-5">
     <div class="container mb-5">
       <div class="row justify-content-center pb-4">
-        <div class="col-6 col-md-6" style="background:url('/public/images/approach/approach_frame_layout_xxl_650x158_top.png') no-repeat; background-size: 95%">
+        <div class="col-6 col-md-6" style="background:url('/images/approach/approach_frame_layout_xxl_650x158_top.png') no-repeat; background-size: 95%">
           <div class="row ps-2 pt-2">
             <div class="col-12">
               <h4 class="mb-3"><b>XXL Mit Bus & Bahn</b></h4>
@@ -213,7 +213,7 @@
             <img src="{{asset('images/approach/approach_frame_layout_xxl_650x158_bottom.png')}}" alt="header_bottom" width="580">
           </div>
         </div>
-        <div class="col-6 col-md-6" style="background:url('/public/images/approach/approach_frame_layout_xxl_650x158_top.png') no-repeat; background-size: 95%">
+        <div class="col-6 col-md-6" style="background:url('/images/approach/approach_frame_layout_xxl_650x158_top.png') no-repeat; background-size: 95%">
           <div class="row ps-2 pt-2">
             <div class="col-12">
               <h4 class="mb-3"><b>Mit PKW</b></h4>
@@ -228,7 +228,7 @@
       </div>
 
       <div class="container mt-5">
-        <div class="row pb-5 pe-3" style="background:url('/public/images/approach/approach_map_footer_xxl_1320x500.png') no-repeat; background-size: 100%">
+        <div class="row pb-5 pe-3" style="background:url('/images/approach/approach_map_footer_xxl_1320x500.png') no-repeat; background-size: 100%">
           <div class="col-12">
             <div style="max-width:100%;overflow:hidden;color:red;width:1280px;height:420px;">
               <div id="gmapcanvas" style="height:100%; width:100%;max-width:100%;">

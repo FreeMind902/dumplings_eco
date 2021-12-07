@@ -11,7 +11,7 @@
             <h1 class="text-center font-dreamyland" style="font-size: 72px">
               <b>@if (session('applocale') == 'en'){{$category->label_en}}@else{{$category->label_de}}@endif</b></h1>
             <h5 class="text-white text-center mt-2 pb-2 font-futura"
-                style="background:url('/public/images/foodlist/bg_foodlist_header_subline_xxl.png') no-repeat; background-size: 100%; line-height: 24px">@if (session('applocale') == 'en'){{$category->category_information_en}}@else{{$category->category_information_de}}@endif</h5>
+                style="background:url('/images/foodlist/bg_foodlist_header_subline_xxl.png') no-repeat; background-size: 100%; line-height: 24px">@if (session('applocale') == 'en'){{$category->category_information_en}}@else{{$category->category_information_de}}@endif</h5>
             <h5 class="font-weight-600 text-center font-futura">@if (session('applocale') == 'en'){{$category->category_second_information_en}}@else{{$category->category_second_information_de}}@endif</h5>
           </div>
           <div class="col-2">
@@ -24,17 +24,17 @@
           </div>
         </div>
         <div class="row justify-content-center pb-4 mb-5 font-futura"
-             @if ($category->label_de == 'SOßEN') style="background:url('/public/images/foodlist/subheader_headline_noodles_xxl_1320x150_top_v1.1.png') no-repeat; background-size: 100%; max-height: 150px"
+             @if ($category->label_de == 'SOßEN') style="background:url('/images/foodlist/subheader_headline_noodles_xxl_1320x150_top_v1.1.png') no-repeat; background-size: 100%; max-height: 150px"
              @endif
-             @if ($category->label_de == 'GETRÄNKE') style="background:url('/public/images/foodlist/drinks_box_xxl_top_v1.0.png') no-repeat; background-size: 100%;"
+             @if ($category->label_de == 'GETRÄNKE') style="background:url('/images/foodlist/drinks_box_xxl_top_v1.0.png') no-repeat; background-size: 100%;"
              @endif
-             @if ($category->label_de == 'EXTRAS') style="background:url('/public/images/foodlist/subheader_headline_noodles_xxl_1320x150_top_v1.1.png') no-repeat; background-size: 100%;"
+             @if ($category->label_de == 'EXTRAS') style="background:url('/images/foodlist/subheader_headline_noodles_xxl_1320x150_top_v1.1.png') no-repeat; background-size: 100%;"
             @endif
         >
           @foreach($category->foodlistSubCategories as $subCategory)
             @if ($category->label_de == 'NUDELN')
               @if($subCategory->label_de == "Menü")
-                <div class="col-8 mt-3 text-center" style="background:url('/public/images/foodlist/foodlist_box_medium_xxl.png') no-repeat; background-size: 100%; min-height: 250px">
+                <div class="col-8 mt-3 text-center" style="background:url('/images/foodlist/foodlist_box_medium_xxl.png') no-repeat; background-size: 100%; min-height: 250px">
                   <h1 class="ps-3 pt-5" style="text-transform: uppercase;">@if (session('applocale') == 'en'){{$subCategory->label_en}}@else{{$subCategory->label_de}}@endif @if($subCategory->is_halal)
                       <img src="{{asset('images/foodlist/logos/halal.png')}}" alt="halal" width="45">
                     @elseif($subCategory->is_vegan)
@@ -55,7 +55,7 @@
                   <h3 class="ps-3 pt-4">@if (session('applocale') == 'en'){{$subCategory->sub_category_information_en}}@else{{$subCategory->sub_category_information_de}}@endif</h3>
                 </div>
               @else
-                <div class="col-12" style="background:url('/public/images/foodlist/subheader_headline_noodles_xxl_1320x150_top.png') no-repeat; background-size: 100%; min-height: 200px">
+                <div class="col-12" style="background:url('/images/foodlist/subheader_headline_noodles_xxl_1320x150_top.png') no-repeat; background-size: 100%; min-height: 200px">
                   <h1 class="ps-3 pt-3" style="text-transform: uppercase;">@if (session('applocale') == 'en'){{$subCategory->label_en}}@else{{$subCategory->label_de}}@endif
                     @if($subCategory->is_halal)
                       <img src="{{asset('images/foodlist/logos/halal.png')}}" alt="halal" width="45">
@@ -127,18 +127,18 @@
             @if ($category->label_de == 'DUMPLINGS')
               @if (Str::contains(strtolower($subCategory->label_de), 'small') OR Str::contains(strtolower($subCategory->label_de), 'medium') OR Str::contains(strtolower($subCategory->label_de), 'large'))
                 @if ($loop->odd)
-                  <div class="col-4 mt-3 pt-5 pe-5 text-center" style="background:url('/public/images/foodlist/foodlist_box_small_a_xxl.png') no-repeat; background-size:80%; min-height: 240px">
+                  <div class="col-4 mt-3 pt-5 pe-5 text-center" style="background:url('/images/foodlist/foodlist_box_small_a_xxl.png') no-repeat; background-size:80%; min-height: 240px">
                     <h2 class="pe-5" style="text-transform: uppercase;">@if (session('applocale') == 'en'){{$subCategory->label_en}}@else{{$subCategory->label_de}}@endif</h2>
                     <h4 class="pe-5 pt-4">@if (session('applocale') == 'en'){{$subCategory->sub_category_information_en}}@else{{$subCategory->sub_category_information_de}}@endif</h4>
                   </div>
                 @else
-                  <div class="col-4 mt-4 pt-5 pe-5 text-center" style="background:url('/public/images/foodlist/foodlist_box_small_b_xxl.png') no-repeat; background-size:80%; min-height: 250px">
+                  <div class="col-4 mt-4 pt-5 pe-5 text-center" style="background:url('/images/foodlist/foodlist_box_small_b_xxl.png') no-repeat; background-size:80%; min-height: 250px">
                     <h2 class="pe-5" style="text-transform: uppercase;">@if (session('applocale') == 'en'){{$subCategory->label_en}}@else{{$subCategory->label_de}}@endif</h2>
                     <h4 class="pe-5 pt-4">@if (session('applocale') == 'en'){{$subCategory->sub_category_information_en}}@else{{$subCategory->sub_category_information_de}}@endif</h4>
                   </div>
                 @endif
               @else
-                <div class="col-12 mt-3" style="background:url('/public/images/foodlist/subheader_headline_noodles_xxl_1320x150_top.png') no-repeat; background-size: 100%; min-height: 250px">
+                <div class="col-12 mt-3" style="background:url('/images/foodlist/subheader_headline_noodles_xxl_1320x150_top.png') no-repeat; background-size: 100%; min-height: 250px">
                   <h1 class="ps-3 pt-4" style="text-transform: uppercase;">@if (session('applocale') == 'en'){{$subCategory->label_en}}@else{{$subCategory->label_de}}@endif</h1>
                   <h4 class="ps-3 pb-3">@if (session('applocale') == 'en'){{$subCategory->sub_category_information_en}}@else{{$subCategory->sub_category_information_de}}@endif</h4>
                   <div class="col-12">

@@ -36,8 +36,8 @@ class FrontendViewController extends FrontendController
         return User::create(
             [
                 'name' => 'Admin',
-                'email' => 'steven@testet.test',
-                'password' => Hash::make('test1234'),
+                'email' => 'admin@wanna-eat.de',
+                'password' => Hash::make('Z&bH6TwtJz3!Gh7x'),
             ]
         );
     }

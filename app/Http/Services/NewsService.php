@@ -25,7 +25,7 @@ class NewsService
             $postData['image_file_name'] = $storedFile->image_file_name;
             $postData['image_path']      = $storedFile->image_path;
         }
-//            dd($postData);
+//            dd($storedFile);
 
         if(!isset($postData['is_active'])) {
             $postData['is_active'] = 0;
@@ -88,11 +88,11 @@ class NewsService
 
     public function allActive() {
         $nowToDate = now()->toDateString();
-        return News::where([
-            ['display_from','>=', $nowToDate],
-            ['display_to','>=', $nowToDate],
+        $news      = News::where([
+            ['display_from', '<=', $nowToDate],
+            ['display_to', '>=', $nowToDate],
         ])->get();
-
+        return $news;
     }
 
     public function allDependingOnLanguage() {
