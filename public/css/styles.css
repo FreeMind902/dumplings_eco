@@ -176,3 +176,16 @@ button:disabled {
 .font-futura {
     font-family: 'Futura', sans-serif;
 }
+
+.newsletter-header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #555;
+}
+
+.newsletter-header h1 {
+    position: relative;
+    top: 18px;
+    left: 10px;
+}

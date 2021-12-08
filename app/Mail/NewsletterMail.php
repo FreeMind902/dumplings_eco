@@ -24,7 +24,7 @@ class NewsletterMail extends Mailable
         $this->subscriber = $subscriber;
         $this->newsletter = $newsletter;
 
-        $this->subject = $this->newsletter->subject_de ?? null;
+        $this->subject = $this->newsletter->subject_de ?? 'Newsletter';
     }
 
     /**

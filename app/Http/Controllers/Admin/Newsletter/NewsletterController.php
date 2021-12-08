@@ -28,10 +28,12 @@ class NewsletterController extends Controller
     public function sendNewsletter(Request $request) {
         $postData = $request->all();
         $newsletter = $this->newsletterService->single($postData['newsletter_id']);
+
         foreach($postData['subscriber_ids'] as $subscriberId) {
             $subscriber = $this->subscriberService->single($subscriberId);
             Mail::to($subscriber->email)->send(new NewsletterMail($newsletter, $subscriber));
         }
+
         return redirect()->route('admin.newsletter.send')->with('status', 'Newsletter erfolgreich versendet');
     }
 }
