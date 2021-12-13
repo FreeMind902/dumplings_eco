@@ -1,25 +1,20 @@
 @extends('layouts.frontend.master')
 
 @section('content')
-
-  {{--HEADER--}}
-
-
-
   {{--Start Viewport XXL--}}
-  <div class="d-none d-md-block">
+  <div class="">
     @if (isset($news))
       @foreach($news as $newsItem)
-        <div class="container mb-5 letter-spacing-5">
+        <div class="container mb-5 letter-spacing-3">
           <div class="row pb-4">
-            <div class="col-8 col-md-12" style="background:url('/images/foodlist/subheader_headline_noodles_xxl_1320x150_top.png') no-repeat; background-size: 100%">
+            <div class="col-12" style="background:url('/images/foodlist/subheader_headline_noodles_xxl_1320x150_top.png') no-repeat; background-size: 100%">
               <div class="row pt-2">
-                <div class="col-8 ms-2 pt-3 pb-4">
-                  <h1 class="display-3 mb-5 ms-3" style="font-family: 'DreamyLand', sans-serif;"><b>@if (session('applocale') == 'en'){{$newsItem->headline_en}}@else{{$newsItem->headline_de}}@endif</b></h1>
-                  <h5 class="ms-3 " style="font-family: 'Futura', sans-serif;"><b><i>@if (session('applocale') == 'en'){{$newsItem->body_en}}@else{{$newsItem->body_de}}@endif</i> </b></h5>
+                <div class="col-12 col-md-6 pt-3 pb-4">
+                  <h1 class="display-3 mb-5 ms-2" style="font-family: 'DreamyLand', sans-serif;"><b>@if (session('applocale') == 'en'){{$newsItem->headline_en}}@else{{$newsItem->headline_de}}@endif</b></h1>
+                  <h5 class="ms-2" style="font-family: 'Futura', sans-serif;"><b><i>@if (session('applocale') == 'en'){{$newsItem->body_en}}@else{{$newsItem->body_de}}@endif</i> </b></h5>
                 </div>
-                <div class="col-3 pt-3 pb-4 me-1 d-none d-lg-block">
-                  <img src="{{$newsItem->image_path}}" alt="news_image" style="max-width: 400px;">
+                <div class="col-12 col-md-6 pt-3 pb-4">
+                  <img src="{{$newsItem->image_path}}" alt="news_image" style="max-width: 100%; max-height: 100%;">
                 </div>
 
               </div>
@@ -39,8 +34,7 @@
             <div id="carouselExampleCaptions" class="ps-3 pe-3 carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 @foreach($stories as $story)
-                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{$loop->index}}" @if($loop->first) class="active" @endif aria-current="true"
-                          aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{$loop->index}}" @if($loop->first) class="active" @endif aria-current="true" aria-label="Slide 1"></button>
 
                 @endforeach
               </div>

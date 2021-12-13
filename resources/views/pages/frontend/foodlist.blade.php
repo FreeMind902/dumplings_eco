@@ -3,6 +3,7 @@
 @section('content')
   <div class="container">
 
+
     {{--Start Viewport XXL--}}
     <div class="d-none d-lg-block letter-spacing-2">
       @foreach($categories as $category)

@@ -88,7 +88,7 @@
   </div>
   <div class="container-fluid pt-3">
     <div class="row bg-secondary text-center">
-      <p class="text-white mt-3">Copyright Wannaeat © 2021</p>
+      <p class="text-white mt-3">Copyright Wanna Eat © {{now()->year}}</p>
     </div>
   </div>
 </footer>
