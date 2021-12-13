@@ -32,7 +32,7 @@
       <div class="container mt-1 mb-5">
         <div class="row pe-2">
           <div class="col-12 ps-3 pt-3" style="background:url('/images/foodlist/subheader_headline_noodles_xxl_1320x150_top.png') no-repeat; background-size: 100%">
-            <div id="carouselExampleCaptions" class="ps-3 pe-3 carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleCaptions" class="ps-3 pe-3 carousel slide" data-bs-ride="carousel" data-bs-interval="20000">
               <div class="carousel-indicators">
                 @foreach($stories as $story)
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{$loop->index}}" @if($loop->first) class="active" @endif aria-current="true" aria-label="Slide 1"></button>
@@ -45,7 +45,7 @@
                     <img src="{{$story->image_path}}" class="d-block w-100" alt="story_image" width="800" height="600">
                     <div class="carousel-caption">
                       <h1 class="display-3 letter-spacing-5 text-stroke-white mb-4" style="font-family: 'DreamyLand', sans-serif; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">@if (session('applocale') == 'en'){{$story->headline_en}}@else{{$story->headline_de}}@endif</h1>
-                      <h5 class="letter-spacing-3 text-stroke-white" style="font-family: 'Futura', sans-serif; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">@if (session('applocale') == 'en'){{$story->body_en}}@else{{$story->body_de}}@endif{{$story->body_de}}</h5>
+                      <h5 class="letter-spacing-2 text-stroke-white" style="font-family: 'Futura', sans-serif; text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">@if (session('applocale') == 'en'){{$story->body_en}}@else{{$story->body_de}}@endif{{$story->body_de}}</h5>
                     </div>
                   </div>
                 @endforeach
