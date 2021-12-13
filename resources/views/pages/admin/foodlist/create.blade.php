@@ -178,8 +178,8 @@
                   <label class="form-label" for="container_size" style="font-size: 20px">Wie soll der Eintrag angezeigt werden ? </label>
                   <div class="col-12 col-md-4">
                     <select name="container_size" id="container_size" class="form-select">
-                      <option value="col-6" @if (isset($foodListEntry) && $foodListEntry->container_size == 'col-6') selected @endif>halbe Seitenbreite</option>
-                      <option value="col-12" @if (isset($foodListEntry) && $foodListEntry->container_size == 'col-12') selected @endif>ganze Seitenbreite</option>
+                      <option value="col-12 col-md-6" @if (isset($foodListEntry) && $foodListEntry->container_size == 'col-12 col-md-6') selected @endif>halbe Seitenbreite</option>
+                      <option value="col-12 col-md-12" @if (isset($foodListEntry) && $foodListEntry->container_size == 'col-12 col-md-12') selected @endif>ganze Seitenbreite</option>
                     </select>
                   </div>
                 </div>

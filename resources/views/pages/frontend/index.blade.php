@@ -8,6 +8,7 @@
         <div class="container mb-5 letter-spacing-3">
           <div class="row pb-4">
             <div class="col-12" style="background:url('/images/foodlist/subheader_headline_noodles_xxl_1320x150_top.png') no-repeat; background-size: 100%">
+
               <div class="row pt-2">
                 <div class="col-12 col-md-6 pt-3 pb-4">
                   <h1 class="display-3 mb-5 ms-2" style="font-family: 'DreamyLand', sans-serif;"><b>@if (session('applocale') == 'en'){{$newsItem->headline_en}}@else{{$newsItem->headline_de}}@endif</b></h1>
