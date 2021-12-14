@@ -22,7 +22,7 @@
                 </b>
               </h1>
             </div>
-            <div class="col-12 offset-md-3 col-md-6 offset-lg-4 col-lg-4">
+            <div class="col-12 offset-md-3 col-md-6 offset-lg-3 col-lg-6">
               <h5 class="text-white text-center font-futura"
                   style="background:url('/images/foodlist/bg_foodlist_header_subline_xxl.png') no-repeat; background-size: 100% 100%;min-width: 288px">@if (session('applocale') == 'en'){{$category->category_information_en}}@else{{$category->category_information_de}}@endif</h5>
 
