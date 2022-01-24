@@ -61,7 +61,7 @@
               <polyline points="22,6 12,13 2,6"/>
             </svg>
           </span>
-          <span>info@wannaeat.de</span>
+          <span>info@wanna-eat.de</span>
         </div>
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-2">
            <span>
