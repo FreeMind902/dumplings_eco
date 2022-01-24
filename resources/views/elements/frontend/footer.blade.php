@@ -17,20 +17,20 @@
         <span class=""><b>Links</b></span>
         <hr class="footer-hr">
         <ul class="nav flex-column">
-          <li class="nav-item">
-            <a class="nav-link text-decoration-none text-dark" href="{{ route('frontend.index') }}" style="margin-left: -16px">Story</a>
+          <li class="nav-item ms-3">
+            <a style="margin-left: -16px" class="nav-link text-decoration-none text-dark" href="{{ route('frontend.index') }}">Story</a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link text-decoration-none text-dark" href="{{ route('frontend.foodlist') }}" style="margin-left: -16px">Our Foods</a>
+          <li class="nav-item ms-3 w-90px">
+            <a style="margin-left: -16px" class="nav-link text-decoration-none text-dark" href="{{ route('frontend.foodlist') }}">@if (session('applocale') == 'en') Our Foods @else Speisekarte @endif</a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link text-decoration-none text-dark" href="{{ route('frontend.approach') }}" style="margin-left: -16px">Anfahrt</a>
+          <li class="nav-item ms-3">
+            <a style="margin-left: -16px" class="nav-link text-decoration-none text-dark" href="{{ route('frontend.approach') }}">@if (session('applocale') == 'en') Approach @else Anfahrt @endif</a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link text-decoration-none text-dark" href="{{ route('frontend.impress') }}" style="margin-left: -16px">Impressum</a>
+          <li class="nav-item ms-3">
+            <a style="margin-left: -16px" class="nav-link text-decoration-none text-dark" href="{{ route('frontend.impress') }}">@if (session('applocale') == 'en') Impress @else Impressum @endif </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link text-decoration-none text-dark" href="{{ route('frontend.privacy') }}" style="margin-left: -16px">Datenschutz</a>
+          <li class="nav-item ms-3">
+            <a style="margin-left: -16px" class="nav-link text-decoration-none text-dark" href="{{ route('frontend.privacy') }}">@if (session('applocale') == 'en') Privacy @else Datenschutz @endif</a>
           </li>
         </ul>
 

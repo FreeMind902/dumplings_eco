@@ -16,24 +16,24 @@
         <a class="nav-link" href="{{ route('frontend.index') }}">Story</a>
       </li>
       <li class="nav-item ms-3 w-90px">
-        <a class="nav-link" href="{{ route('frontend.foodlist') }}">Our Foods</a>
+        <a class="nav-link" href="{{ route('frontend.foodlist') }}">@if (session('applocale') == 'en') Our Foods @else Speisekarte @endif</a>
       </li>
       <li class="nav-item ms-3">
-        <a class="nav-link" href="{{ route('frontend.approach') }}">Anfahrt</a>
+        <a class="nav-link" href="{{ route('frontend.approach') }}">@if (session('applocale') == 'en') Approach @else Anfahrt @endif</a>
       </li>
       <li class="nav-item ms-3">
-        <a class="nav-link" href="{{ route('frontend.impress') }}">Impressum</a>
+        <a class="nav-link" href="{{ route('frontend.impress') }}">@if (session('applocale') == 'en') Impress @else Impressum @endif </a>
       </li>
       <li class="nav-item ms-3">
-        <a class="nav-link" href="{{ route('frontend.privacy') }}">Datenschutz</a>
+        <a class="nav-link" href="{{ route('frontend.privacy') }}">@if (session('applocale') == 'en') Privacy @else Datenschutz @endif</a>
       </li>
       <li class="nav-item dropdown ms-3">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Sprache
         </a>
         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <li><a class="dropdown-item" href="{{route('frontend.lang','de')}}">Deutsch</a></li>
-          <li><a class="dropdown-item" href="{{route('frontend.lang','en')}}">Englisch</a></li>
+          <li><a class="dropdown-item" href="{{route('frontend.lang','de')}}">@if (session('applocale') == 'en') German @else Deutsch @endif</a></li>
+          <li><a class="dropdown-item" href="{{route('frontend.lang','en')}}">@if (session('applocale') == 'en') English @else Englisch @endif</a></li>
         </ul>
       </li>
 
